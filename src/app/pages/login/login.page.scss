@@ -1,0 +1,17 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #login-wrapper {
+        border: 1px solid #b7b7b7;
+        border-radius: 16px;
+        padding: 2rem;
+
+        .login-input {
+            margin-bottom: 1rem;
+        }
+    }
+}

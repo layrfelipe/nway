@@ -1,0 +1,24 @@
+<main>
+    <div id="login-wrapper">
+        <ion-input
+            class="login-input"
+            label="Usuário"
+            labelPlacement="stacked"
+            placeholder="Digite aqui"
+            [value]="userInput()"
+            (ionChange)="onChangeUserInput($event)"
+        />
+
+        <ion-input
+            class="login-input"
+            label="Senha"
+            labelPlacement="stacked"
+            placeholder="Digite aqui"
+            type="password"
+            [value]="passwordInput()"
+            (ionChange)="onChangePasswordInput($event)"
+        />
+        <ion-button (click)="login()">Login</ion-button>
+        <ion-button (click)="mockData()" color="warning">Mock</ion-button>
+    </div>
+</main>

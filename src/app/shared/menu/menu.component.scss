@@ -1,0 +1,15 @@
+#menu-container {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #b7b7b7;
+
+    .custom-list-item {
+        margin: 1rem 0;
+        cursor: pointer;
+
+        .custom-item-label {
+            margin-left: 1rem;
+            font-size: .9rem;
+        }
+    }
+}
