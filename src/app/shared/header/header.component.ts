@@ -29,6 +29,15 @@ export class HeaderComponent implements OnDestroy {
         this.pageTitle.set(ev.routerEvent.url.substring(1))
       }
       if (this.pageTitle() == 'inicio') this.showBackButton.set(false)
+
+      const pageTitleUnformatted = this.pageTitle()
+      switch(pageTitleUnformatted) {
+        case 'inicio':
+          this.pageTitle.set("início")
+          break;
+        case 'solicitacoes':
+          this.pageTitle.set("solicitações")
+      }
     })
   }
 
