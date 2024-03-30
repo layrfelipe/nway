@@ -1,9 +1,133 @@
 <main>
-    <div class="menu-wrapper">
-        <app-menu/>
-    </div>
+    <app-header></app-header>
 
-    <div class="page-content-wrapper">
-        <h1>Início</h1>
+    <div id="main-page-wrapper">
+        <div id="menu-wrapper">
+            <app-menu></app-menu>
+        </div>
+
+        <div id="main-content-wrapper">
+            <div id="indicators-row">
+                <div class="indicator-wrapper">
+                    <ion-label>Faturamento total</ion-label>
+                    <h2>R$200.000.000</h2>
+                </div>
+
+                <div class="indicator-wrapper">
+                    <ion-label>Energia gerada</ion-label>
+                    <h2>920.000 kWh</h2>
+                </div>
+
+                <div class="indicator-wrapper">
+                    <ion-label>Novos clientes</ion-label>
+                    <h2>542</h2>
+                </div>
+
+                <div class="indicator-wrapper">
+                    <ion-label>Inadimplência</ion-label>
+                    <h2>R$2.000.000</h2>
+                </div>
+
+                <div class="indicator-wrapper">
+                    <ion-label>Novos leads</ion-label>
+                    <h2>15.542</h2>
+                </div>
+            </div>
+
+            <div id="general-status-row">
+                <div class="status-wrapper">
+                    <div class="status-header">
+                        <ion-label class="status-header-custom-label">Notificações</ion-label>
+                        <ion-button size="small" color="success">2 novas</ion-button>
+                    </div>
+
+                    <div class="status-content">
+                        <ion-list class="status-custom-list">
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <div class="notification-data">
+                                        <ion-icon name="alert-circle" color="warning"></ion-icon>
+                                        <ion-label class="custom-label">Manunteção do sistema</ion-label>
+                                    </div>
+                                    <div class="notification-log-datetime">
+                                        <ion-label>12/05 14:27</ion-label>
+                                    </div>
+                                </div>
+                            </ion-item>
+
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <div class="notification-data">
+                                        <ion-icon name="alert-circle" color="warning"></ion-icon>
+                                        <ion-label class="custom-label">Manunteção do sistema</ion-label>
+                                    </div>
+                                    <div class="notification-log-datetime">
+                                        <ion-label>12/05 14:27</ion-label>
+                                    </div>
+                                </div>
+                            </ion-item>
+
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <div class="notification-data">
+                                        <ion-icon name="alert-circle" color="warning"></ion-icon>
+                                        <ion-label class="custom-label">Manunteção do sistema</ion-label>
+                                    </div>
+                                    <div class="notification-log-datetime">
+                                        <ion-label>12/05 14:27</ion-label>
+                                    </div>
+                                </div>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>
+                    </div>
+                </div>
+
+                <div class="status-wrapper">
+                    <div class="status-header">
+                        <ion-label class="status-header-custom-label">Solicitações em andamento</ion-label>
+                        <ion-button size="small" color="dark">2 novas</ion-button>
+                    </div>
+
+                    <div class="status-content">
+                        <ion-list class="status-custom-list">
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <ion-label>SunWave Energy Solutions</ion-label>
+                                    <ion-button color="success">Migração aprovada</ion-button>
+                                </div>
+                            </ion-item>
+
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <ion-label>SunWave Energy Solutions</ion-label>
+                                    <ion-button color="success">Migração aprovada</ion-button>
+                                </div>
+                            </ion-item>
+
+                            <ion-item class="status-custom-item">
+                                <div class="item">
+                                    <ion-label>SunWave Energy Solutions</ion-label>
+                                    <ion-button color="success">Migração aprovada</ion-button>
+                                </div>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="energy-chart-row">
+                <div class="energy-chart-header">
+                    <ion-label id="energy-chart-header-label">Gráfico de energia</ion-label>
+                </div>
+
+                <div class="energy-chart-content">
+
+                </div>
+            </div>
+        </div>
     </div>
 </main>

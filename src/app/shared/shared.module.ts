@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,7 @@ import { MenuComponent } from './menu/menu.component';
     FormsModule,
     IonicModule,
   ],
-  declarations: [MenuComponent],
-  exports: [MenuComponent]
+  declarations: [MenuComponent, HeaderComponent],
+  exports: [MenuComponent, HeaderComponent, IonicModule, CommonModule, FormsModule]
 })
 export class SharedModule {}

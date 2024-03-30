@@ -1,13 +1,123 @@
 main {
     width: 100%;
-    min-height: 100vh;
+    overflow-y: auto;
     display: flex;
+    flex-direction: column;
 
-    .menu-wrapper {
-        width: 15%;
-    }
+    #main-page-wrapper {
+        width: 100%;
+        display: flex;
 
-    .page-content-wrapper {
-        width: 85%;
+        #menu-wrapper {
+            width: 15%;
+        }
+
+        #main-content-wrapper {
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            #indicators-row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .indicator-wrapper {
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    width: 100%;
+                    padding: 1rem;
+                    margin: 0 .5rem;
+                }
+
+                :first-child {
+                    margin-left: 0;
+                }
+
+                :last-child {
+                    margin-right: 0;
+                }
+            }
+
+            #general-status-row {
+                width: 100%;
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+
+                .status-wrapper {
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    
+                    .status-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .status-header-custom-label {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                    .status-content {
+                        margin-top: 1rem;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .status-custom-list {
+                            width: 100%;
+
+                            .status-custom-item {
+                                width: 100%;
+
+                                .item {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+        
+                                    .notification-data {
+                                        display: flex;
+
+                                        .custom-label {
+                                            margin-left: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #show-all-notifications-button {
+                        align-self: flex-end;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+            #energy-chart-row {
+                width: 100%;
+                min-height: 40vh;
+                border: 1px solid #b7b7b7;
+                border-radius: 1rem;
+                margin-top: 2rem;
+                padding: 1rem;
+
+                .energy-chart-header {
+                    width: 100%;
+
+                    #energy-chart-header-label {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 }
