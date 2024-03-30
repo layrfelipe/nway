@@ -19,16 +19,8 @@ export class HeaderComponent implements OnDestroy {
   ) {
     this.routerSubscription = this.router.events.subscribe((ev: Event) => {
       this.showBackButton.set(true)
-      if (ev instanceof NavigationStart) {
-        this.pageTitle.set(ev.url.substring(1))
-      }
-      else if (ev instanceof NavigationEnd) {
-        this.pageTitle.set(ev.urlAfterRedirects.substring(1))
-      }
-      else if (ev instanceof Scroll) {
-        this.pageTitle.set(ev.routerEvent.url.substring(1))
-      }
-      if (this.pageTitle() == 'inicio') this.showBackButton.set(false)
+      this.pageTitle.set(this.router.url.substring(1))
+      if (this.router.url == '/inicio') this.showBackButton.set(false)
 
       const pageTitleUnformatted = this.pageTitle()
       switch(pageTitleUnformatted) {
@@ -37,6 +29,9 @@ export class HeaderComponent implements OnDestroy {
           break;
         case 'solicitacoes':
           this.pageTitle.set("solicitações")
+          break;
+        default:
+          this.pageTitle.set("")
       }
     })
   }

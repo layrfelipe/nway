@@ -58,7 +58,7 @@
                             <ion-item class="status-custom-item">
                                 <div class="item">
                                     <div class="notification-data">
-                                        <ion-icon name="alert-circle" color="success"></ion-icon>
+                                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
                                         <ion-label class="custom-label">Migração concluída</ion-label>
                                     </div>
                                     <div class="notification-log-datetime">
@@ -70,7 +70,7 @@
                             <ion-item class="status-custom-item" [disabled]="true">
                                 <div class="item">
                                     <div class="notification-data">
-                                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                                        <ion-icon name="checkmark-circle" color="medium"></ion-icon>
                                         <ion-label class="custom-label">Troca de fornecedor</ion-label>
                                     </div>
                                     <div class="notification-log-datetime">
@@ -114,7 +114,7 @@
                             </ion-item>
                         </ion-list>
 
-                        <ion-button color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>
+                        <ion-button (click)="goToRequestsPage()" color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>
                     </div>
                 </div>
             </div>
