@@ -26,6 +26,9 @@ export class MenuComponent implements OnDestroy {
         case '/clientes':
           this.selectedMenuOption.set("/clientes")
           break;
+        case '/graficos-de-energia':
+          this.selectedMenuOption.set("/graficos-de-energia")
+          break;
       }
     })
   }
@@ -45,6 +48,12 @@ export class MenuComponent implements OnDestroy {
   goToCustomersPage() {
     if (this.router.url != '/clientes') {
       this.router.navigate(['/clientes'])
+    }
+  }
+
+  goToEnergyChartsPage() {
+    if (this.router.url != '/graficos-de-energia') {
+      this.router.navigate(['/graficos-de-energia'])
     }
   }
 

@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'clientes',
     loadChildren: () => import('./pages/customers/customers.module').then( m => m.CustomersPageModule)
+  },
+  {
+    path: 'graficos-de-energia',
+    loadChildren: () => import('./pages/energy-charts/energy-charts.module').then( m => m.EnergyChartsPageModule)
   }
 ];
 

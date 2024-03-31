@@ -24,14 +24,17 @@ export class HeaderComponent implements OnDestroy {
 
       const pageTitleUnformatted = this.pageTitle()
       switch(pageTitleUnformatted) {
-        case 'inicio':
+        case "inicio":
           this.pageTitle.set("início")
           break;
-        case 'solicitacoes':
+        case "solicitacoes":
           this.pageTitle.set("solicitações")
           break;
-        case 'clientes':
+        case "clientes":
           this.pageTitle.set("clientes")
+          break;
+        case "graficos-de-energia":
+          this.pageTitle.set("gráficos de energia")
           break;
         default:
           this.pageTitle.set("")

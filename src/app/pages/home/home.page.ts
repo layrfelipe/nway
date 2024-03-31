@@ -15,5 +15,4 @@ export class HomePage {
   goToRequestsPage() {
     this.router.navigate(['solicitacoes'])
   }
-
 }
