@@ -38,7 +38,6 @@ main {
                 table {
                     width: 100%;
                     text-align: center;
-                    margin-bottom: 1rem;
 
                     thead {
                         color: #9f9f9f;
@@ -65,6 +64,8 @@ main {
                 span {
                     color: #92949C;
                     font-size: .8rem;
+                    display: inline-block;
+                    margin-top: 1rem;
                 }
             }
         }

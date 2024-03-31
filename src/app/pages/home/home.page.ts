@@ -15,4 +15,8 @@ export class HomePage {
   goToRequestsPage() {
     this.router.navigate(['solicitacoes'])
   }
+
+  goToNotificationsPage() {
+    this.router.navigate(['inicio', 'notificacoes'])
+  }
 }

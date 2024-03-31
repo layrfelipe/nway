@@ -36,6 +36,9 @@ export class HeaderComponent implements OnDestroy {
         case "graficos-de-energia":
           this.pageTitle.set("gráficos de energia")
           break;
+        case "inicio/notificacoes":
+          this.pageTitle.set("notificações")
+          break;
         default:
           this.pageTitle.set("")
       }
