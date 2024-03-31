@@ -18,12 +18,12 @@ main {
             flex-direction: column;
             padding: 2rem;
 
-            #indicators-row {
+            #charts-options-row {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
 
-                .indicator-wrapper {
+                .option-wrapper {
                     border: 1px solid #b7b7b7;
                     border-radius: 1rem;
                     width: 100%;
