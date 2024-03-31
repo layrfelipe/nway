@@ -7,7 +7,81 @@
         </div>
 
         <div id="main-content-wrapper">
-            <h1>Consulta de medição</h1>
+            <div id="measurement-queries-table-wrapper">
+                <h2>Consulta de medição</h2>
+
+                <div id="search-company-container">
+                    <div id="search-company-wrapper">
+                        <ion-input placeholder="Pesquise pelo nome ou CNPJ do cliente" fill="outline">
+                            <ion-icon slot="start" name="search-outline" color="medium" aria-hidden="true"></ion-icon>
+                          </ion-input>
+                    </div>
+                </div>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome da empresa</th>
+                            <th>Situação financeira</th>
+                            <th>Consumo último mês</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr class="table-custom-row">
+                            <td>SunWave Energy Solutions</td>
+                            <td><ion-label color="success">última fatura paga</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>DigitalHealth Tech</td>
+                            <td><ion-label color="success">última fatura paga</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>MediaTech Solutions</td>
+                            <td><ion-label color="success">última fatura paga</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>TechFood Delivery</td>
+                            <td><ion-label color="danger">3 faturas em atraso</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>CleanTech Innovations</td>
+                            <td><ion-label color="success">última fatura paga</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>EduTech Academy</td>
+                            <td><ion-label color="success">última fatura paga</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>AgriTech Farming Solutions</td>
+                            <td><ion-label color="danger">3 faturas em atraso</ion-label></td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <span id="count-span">Mostrando 7 de 690</span>
+            </div>
         </div>
     </div>
 </main>

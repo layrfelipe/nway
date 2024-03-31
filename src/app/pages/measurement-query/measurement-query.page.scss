@@ -17,6 +17,59 @@ main {
             display: flex;
             flex-direction: column;
             padding: 2rem;
+
+            #measurement-queries-table-wrapper {
+                width: 100%;
+                border: 1px solid #b7b7b7;
+                border-radius: 1rem;
+                margin-top: 1rem;
+                padding: 1rem;
+
+                #search-company-container {
+                    width: 100%;
+                    display: flex;
+                    margin: 1.5rem 0 2rem 0;
+
+                    #search-company-wrapper {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                table {
+                    width: 100%;
+                    text-align: center;
+
+                    thead {
+                        color: #9f9f9f;
+                        font-weight: 400;
+                        font-size: .9rem;
+
+                        th {
+                            padding-bottom: .5rem;
+                        }
+                    }
+
+                    tbody {
+                        .table-custom-row {
+                            border-top: 1px solid #b7b7b7;
+                            border-bottom: 1px solid #b7b7b7;
+
+                            td {
+                                padding: 1rem 0;
+                            }
+                        }
+                    }
+                }
+
+                #count-span {
+                    color: #92949C;
+                    font-size: .8rem;
+                    display: inline-block;
+                    margin-top: 1rem;
+                }
+            }
         }
     }
 }

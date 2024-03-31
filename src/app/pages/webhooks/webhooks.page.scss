@@ -17,6 +17,61 @@ main {
             display: flex;
             flex-direction: column;
             padding: 2rem;
+
+            #webhooks-buttons-actions {
+                :first-child {
+                    margin-right: 1rem;
+                }
+            }
+
+            #active-webhooks-table-wrapper {
+                width: 100%;
+                border: 1px solid #b7b7b7;
+                border-radius: 1rem;
+                margin-top: 2rem;
+                padding: 1rem;
+
+                h2 {
+                    margin-bottom: 3rem;
+                }
+
+                table {
+                    width: 100%;
+                    text-align: center;
+
+                    thead {
+                        color: #9f9f9f;
+                        font-weight: 400;
+                        font-size: .9rem;
+
+                        th {
+                            padding-bottom: .5rem;
+                        }
+                    }
+
+                    tbody {
+                        .table-custom-row {
+                            border-top: 1px solid #b7b7b7;
+                            border-bottom: 1px solid #b7b7b7;
+
+                            td {
+                                padding: .5rem 0;
+
+                                #chevron-icon {
+                                    margin-left: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #count-span {
+                    color: #92949C;
+                    font-size: .8rem;
+                    display: inline-block;
+                    margin-top: 1rem;
+                }
+            }
         }
     }
 }

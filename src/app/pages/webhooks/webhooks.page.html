@@ -7,7 +7,63 @@
         </div>
 
         <div id="main-content-wrapper">
-            <h1>Webhooks</h1>
+            <div id="webhooks-buttons-actions">
+                <ion-button color="success">CRIAR NOVO WEBHOOK</ion-button>
+            </div>
+    
+            <div id="active-webhooks-table-wrapper">
+                <h2>Webhooks ativos</h2>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gatilhos</th>
+                            <th>URL</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr class="table-custom-row">
+                            <td>Troca de representante aceita</td>
+                            <td>http://endereco-teste.com.br/mock/128730813892</td>
+                            <td>
+                                <ion-icon name="trash-outline" color="medium" size="large"></ion-icon>
+                                <ion-icon name="chevron-forward" color="medium" id="chevron-icon" size="large"></ion-icon>
+                            </td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>Troca de representante rejeitada</td>
+                            <td>http://endereco-teste.com.br/mock/128730813892</td>
+                            <td>
+                                <ion-icon name="trash-outline" color="medium" size="large"></ion-icon>
+                                <ion-icon name="chevron-forward" color="medium" id="chevron-icon" size="large"></ion-icon>
+                            </td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>Migração aceita</td>
+                            <td>http://endereco-teste.com.br/mock/128730813892</td>
+                            <td>
+                                <ion-icon name="trash-outline" color="medium" size="large"></ion-icon>
+                                <ion-icon name="chevron-forward" color="medium" id="chevron-icon" size="large"></ion-icon>
+                            </td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>Migração rejeitada</td>
+                            <td>http://endereco-teste.com.br/mock/128730813892</td>
+                            <td>
+                                <ion-icon name="trash-outline" color="medium" size="large"></ion-icon>
+                                <ion-icon name="chevron-forward" color="medium" id="chevron-icon" size="large"></ion-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <span id="count-span">Mostrando 4 de 690</span>
+            </div>
         </div>
     </div>
 </main>

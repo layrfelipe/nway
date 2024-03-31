@@ -29,6 +29,12 @@ export class MenuComponent implements OnDestroy {
         case '/graficos-de-energia':
           this.selectedMenuOption.set("/graficos-de-energia")
           break;
+        case '/consulta-de-medicao':
+          this.selectedMenuOption.set("/consulta-de-medicao")
+          break;
+        case '/webhooks':
+          this.selectedMenuOption.set("/webhooks")
+          break;
       }
     })
   }
