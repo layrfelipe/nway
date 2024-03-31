@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginPage } from './pages/login/login.page';
 
 const routes: Routes = [
   {
@@ -27,6 +26,14 @@ const routes: Routes = [
   {
     path: 'graficos-de-energia',
     loadChildren: () => import('./pages/energy-charts/energy-charts.module').then( m => m.EnergyChartsPageModule)
+  },
+  {
+    path: 'consulta-de-medicao',
+    loadChildren: () => import('./pages/measurement-query/measurement-query.module').then( m => m.MeasurementQueryPageModule)
+  },
+  {
+    path: 'webhooks',
+    loadChildren: () => import('./pages/webhooks/webhooks.module').then( m => m.WebhooksPageModule)
   }
 ];
 

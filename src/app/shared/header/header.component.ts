@@ -39,6 +39,12 @@ export class HeaderComponent implements OnDestroy {
         case "inicio/notificacoes":
           this.pageTitle.set("notificações")
           break;
+        case "consulta-de-medicao":
+          this.pageTitle.set("consulta de medição")
+          break;
+        case "webhooks":
+          this.pageTitle.set("webhooks")
+          break;
         default:
           this.pageTitle.set("")
       }

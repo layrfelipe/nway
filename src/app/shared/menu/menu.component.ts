@@ -57,6 +57,18 @@ export class MenuComponent implements OnDestroy {
     }
   }
 
+  goToMeasurementQueryPage() {
+    if (this.router.url != '/consulta-de-medicao') {
+      this.router.navigate(['/consulta-de-medicao'])
+    }
+  }
+
+  goToWebhooksPage() {
+    if (this.router.url != '/webhooks') {
+      this.router.navigate(['/webhooks'])
+    }
+  }
+
   ngOnDestroy(): void {
     this.routerSubscription.unsubscribe()
   }
