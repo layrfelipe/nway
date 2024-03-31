@@ -7,97 +7,108 @@
         </div>
 
         <div id="main-content-wrapper">
-            <div id="requests-buttons-actions">
+            <div id="customers-buttons-actions">
                 <ion-button color="success">CADASTRAR NOVO CLIENTE</ion-button>
             </div>
-
-            <div id="my-requests-table-wrapper">
-                <h2>Minhas solicitações</h2>
-
+    
+            <div id="my-active-customers-table-wrapper">
+                <h2>Clientes ativos</h2>
+    
                 <table>
                     <thead>
                         <tr>
                             <th>Nome da empresa</th>
-                            <th>Data da solicitação</th>
-                            <th>Tipo de solicitação</th>
-                            <th>Status</th>
+                            <th>Data de cadastro</th>
+                            <th>Plano</th>
+                            <th>Status do serviço</th>
                         </tr>
                     </thead>
-
+    
                     <tbody>
                         <tr class="table-custom-row">
                             <td>SunWave Energy Solutions</td>
                             <td>20/05/2024</td>
-                            <td>Suspensão</td>
-                            <td><ion-button color="warning" size="small">Aguardando resposta</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>DigitalHealth Tech</td>
                             <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>MediaTech Solutions</td>
                             <td>20/05/2024</td>
-                            <td>Suspensão</td>
-                            <td><ion-button color="danger" size="small">Negada</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="warning" size="small">Em manutenção</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>TechFood Delivery</td>
                             <td>20/05/2024</td>
-                            <td>Migração</td>
-                            <td><ion-button color="success" size="small">Concluída</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>CleanTech Innovations</td>
                             <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>EduTech Academy</td>
                             <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            <td><ion-button color="success" size="small">Concluída</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>AgriTech Farming Solutions</td>
                             <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>FinTech Express</td>
-                            <td>20/05/2024</td>
-                            <td>Migração</td>
-                            <td><ion-button color="success" size="small">Concluída</ion-button></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>EchoTech Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Migração</td>
-                            <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>BioTech Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            <td><ion-button color="danger" size="small">Negada</ion-button></td>
+                            <td>Basic</td>
+                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
 
-                <span>Mostrando 10 de 690</span>
+            <div id="my-inactive-customers-table-wrapper">
+                <h2>Clientes inativos</h2>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome da empresa</th>
+                            <th>Data de cancelamento</th>
+                            <th>Status do serviço</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr class="table-custom-row">
+                            <td>FinTech Express</td>
+                            <td>20/05/2024</td>
+                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>BioTech Innovations</td>
+                            <td>20/05/2024</td>
+                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>RoboTech Systems</td>
+                            <td>20/05/2024</td>
+                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

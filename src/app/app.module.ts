@@ -9,7 +9,7 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, SharedModule],
+  imports: [BrowserModule, IonicModule.forRoot({ animated: false }), AppRoutingModule, HttpClientModule, SharedModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

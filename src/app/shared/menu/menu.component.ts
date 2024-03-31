@@ -23,6 +23,9 @@ export class MenuComponent implements OnDestroy {
         case '/solicitacoes':
           this.selectedMenuOption.set("/solicitacoes")
           break;
+        case '/clientes':
+          this.selectedMenuOption.set("/clientes")
+          break;
       }
     })
   }
@@ -36,6 +39,12 @@ export class MenuComponent implements OnDestroy {
   goToRequestsPage() {
     if (this.router.url != '/solicitacoes') {
       this.router.navigate(['/solicitacoes'])
+    }
+  }
+
+  goToCustomersPage() {
+    if (this.router.url != '/clientes') {
+      this.router.navigate(['/clientes'])
     }
   }
 
