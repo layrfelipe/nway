@@ -45,6 +45,9 @@ export class HeaderComponent implements OnDestroy {
         case "webhooks":
           this.pageTitle.set("webhooks")
           break;
+        case "perfil":
+          this.pageTitle.set("perfil")
+          break;
         default:
           this.pageTitle.set("")
       }

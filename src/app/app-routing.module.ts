@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'webhooks',
     loadChildren: () => import('./pages/webhooks/webhooks.module').then( m => m.WebhooksPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   }
 ];
 

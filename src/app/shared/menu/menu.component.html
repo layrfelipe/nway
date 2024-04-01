@@ -36,8 +36,8 @@
                 <ion-label>Gerenciamento</ion-label>
             </ion-item-divider>
 
-            <ion-item class="custom-list-item">
-                <ion-icon name="person-circle" color="medium"/>
+            <ion-item class="custom-list-item" (click)="goToProfilePage()">
+                <ion-icon name="person-circle" [color]="selectedMenuOption() == '/perfil' ? 'secondary' : 'medium'"/>
                 <ion-label class="custom-item-label">Perfil</ion-label>
             </ion-item>
     

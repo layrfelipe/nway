@@ -35,6 +35,9 @@ export class MenuComponent implements OnDestroy {
         case '/webhooks':
           this.selectedMenuOption.set("/webhooks")
           break;
+        case '/perfil':
+          this.selectedMenuOption.set("/perfil")
+          break;
       }
     })
   }
@@ -72,6 +75,12 @@ export class MenuComponent implements OnDestroy {
   goToWebhooksPage() {
     if (this.router.url != '/webhooks') {
       this.router.navigate(['/webhooks'])
+    }
+  }
+
+  goToProfilePage() {
+    if (this.router.url != '/perfil') {
+      this.router.navigate(['/perfil'])
     }
   }
 
