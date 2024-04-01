@@ -38,6 +38,15 @@ export class MenuComponent implements OnDestroy {
         case '/perfil':
           this.selectedMenuOption.set("/perfil")
           break;
+        case '/configs':
+          this.selectedMenuOption.set("/configs")
+          break;
+        case '/financeiro':
+          this.selectedMenuOption.set("/financeiro")
+          break;
+        case '/logs':
+          this.selectedMenuOption.set("/logs")
+          break;
       }
     })
   }
@@ -81,6 +90,24 @@ export class MenuComponent implements OnDestroy {
   goToProfilePage() {
     if (this.router.url != '/perfil') {
       this.router.navigate(['/perfil'])
+    }
+  }
+
+  goToConfigsPage() {
+    if (this.router.url != '/configs') {
+      this.router.navigate(['/configs'])
+    }
+  }
+
+  goToFinancesPage() {
+    if (this.router.url != '/financeiro') {
+      this.router.navigate(['/financeiro'])
+    }
+  }
+
+  goToLogExplorerPage() {
+    if (this.router.url != '/logs') {
+      this.router.navigate(['/logs'])
     }
   }
 

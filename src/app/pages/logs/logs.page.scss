@@ -1,0 +1,84 @@
+main {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    #main-page-wrapper {
+        width: 100%;
+        display: flex;
+
+        #menu-wrapper {
+            width: 15%;
+        }
+
+        #main-content-wrapper {
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            #my-logs-wrapper {
+                width: 100%;
+                border: 1px solid #b7b7b7;
+                border-radius: 1rem;
+                padding: 1rem;
+
+                h2 {
+                    margin-bottom: 1rem;
+                }
+
+                .custom-log-item-row {
+                    margin: .75rem 0;
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    .left-side-log-row {
+                        display: flex;
+                        align-items: center;
+                        width: 90%;
+                        margin-left: 1rem;
+                        
+                        .log-text-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+    
+                            h3 {
+                                font-size: 1rem;
+                            }
+    
+                            h6 {
+                                font-size: .8rem;
+                                color: #b7b7b7;
+                                margin-top: .5rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .right-side-log-row {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                        width: 10%;
+
+                        h6 {
+                            font-size: .8rem;
+                            color: #b7b7b7;
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+
+                span {
+                    color: #92949C;
+                    font-size: .8rem;
+                    display: inline-block;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

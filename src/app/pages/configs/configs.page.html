@@ -1,0 +1,28 @@
+<main>
+    <app-header></app-header>
+
+    <div id="main-page-wrapper">
+        <div id="menu-wrapper">
+            <app-menu></app-menu>
+        </div>
+
+        <div id="main-content-wrapper">
+            <div id="client-data-wrapper">
+                <div class="input-wrapper">
+                    <ion-label class="custom-label">Client ID</ion-label>
+                    <ion-input fill="outline" class="custom-input" placeholder="Digite seu token" labelPlacement="stacked"></ion-input>
+                </div>
+
+                <div class="input-wrapper" id="client-secret-input-wrapper">
+                    <ion-label class="custom-label" id="client-secret-label">Client Secret</ion-label>
+                    <ion-input fill="outline" class="custom-input" placeholder="Digite o token" labelPlacement="stacked"></ion-input>
+                </div>
+            </div>
+
+            <div id="btns-wrapper">
+                <ion-button color="success">SALVAR ALTERAÇÕES</ion-button>
+                <ion-button color="success" fill="outline">VOLTAR</ion-button>
+            </div>
+        </div>
+    </div>
+</main>

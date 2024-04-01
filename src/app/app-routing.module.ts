@@ -38,6 +38,18 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'configs',
+    loadChildren: () => import('./pages/configs/configs.module').then( m => m.ConfigsPageModule)
+  },
+  {
+    path: 'financeiro',
+    loadChildren: () => import('./pages/finances/finances.module').then( m => m.FinancesPageModule)
+  },
+  {
+    path: 'logs',
+    loadChildren: () => import('./pages/logs/logs.module').then( m => m.LogsPageModule)
   }
 ];
 

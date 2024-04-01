@@ -1,0 +1,52 @@
+main {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    #main-page-wrapper {
+        width: 100%;
+        display: flex;
+
+        #menu-wrapper {
+            width: 15%;
+        }
+
+        #main-content-wrapper {
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            #client-data-wrapper, #btns-wrapper {
+                width: 50%;
+            }
+
+            #client-data-wrapper {
+
+                .input-wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .custom-label {
+                        font-weight: 700;
+                        color: black;
+                    }
+
+                    .custom-input {
+                        margin-top: .5rem;
+                    }
+                }
+
+                #client-secret-input-wrapper {
+                    margin-top: 1.5rem;
+                }
+
+            }
+
+            #btns-wrapper {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
