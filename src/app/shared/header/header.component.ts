@@ -25,37 +25,40 @@ export class HeaderComponent implements OnDestroy {
       const pageTitleUnformatted = this.pageTitle()
       switch(pageTitleUnformatted) {
         case "inicio":
-          this.pageTitle.set("início")
+          this.pageTitle.set("Início")
           break;
         case "solicitacoes":
-          this.pageTitle.set("solicitações")
+          this.pageTitle.set("Solicitações")
           break;
         case "clientes":
-          this.pageTitle.set("clientes")
+          this.pageTitle.set("Clientes")
           break;
         case "graficos-de-energia":
-          this.pageTitle.set("gráficos de energia")
+          this.pageTitle.set("Gráficos de energia")
           break;
         case "inicio/notificacoes":
-          this.pageTitle.set("notificações")
+          this.pageTitle.set("Notificações")
           break;
         case "consulta-de-medicao":
-          this.pageTitle.set("consulta de medição")
+          this.pageTitle.set("Consulta de medição")
           break;
         case "webhooks":
-          this.pageTitle.set("webhooks")
+          this.pageTitle.set("Webhooks")
           break;
         case "perfil":
-          this.pageTitle.set("perfil")
+          this.pageTitle.set("Perfil")
           break;
-        case "configuracoes":
-          this.pageTitle.set("configuracoes")
+        case "configs":
+          this.pageTitle.set("Configurações")
           break;
         case "financeiro":
-          this.pageTitle.set("financeiro")
+          this.pageTitle.set("Financeiro")
           break;
         case "logs":
-          this.pageTitle.set("log explorer")
+          this.pageTitle.set("Log explorer")
+          break;
+        case "solicitacoes/status":
+          this.pageTitle.set("Status da solicitação")
           break;
         default:
           this.pageTitle.set("")
