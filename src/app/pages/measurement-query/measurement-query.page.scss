@@ -3,6 +3,7 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background: white;
 
     #main-page-wrapper {
         width: 100%;
@@ -28,12 +29,13 @@ main {
                 #search-company-container {
                     width: 100%;
                     display: flex;
-                    margin: 1.5rem 0 2rem 0;
+                    margin: 1.5rem 0 3rem 0;
 
                     #search-company-wrapper {
                         width: 100%;
                         display: flex;
                         align-items: center;
+                        color: black
                     }
                 }
 
@@ -52,6 +54,8 @@ main {
                     }
 
                     tbody {
+                        color: black;
+
                         .table-custom-row {
                             border-top: 1px solid #b7b7b7;
                             border-bottom: 1px solid #b7b7b7;

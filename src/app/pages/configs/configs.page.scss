@@ -3,7 +3,8 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-
+    background: white;
+    
     #main-page-wrapper {
         width: 100%;
         display: flex;
@@ -30,11 +31,11 @@ main {
 
                     .custom-label {
                         font-weight: 700;
-                        color: black;
                     }
 
                     .custom-input {
                         margin-top: .5rem;
+                        color: black;
                     }
                 }
 

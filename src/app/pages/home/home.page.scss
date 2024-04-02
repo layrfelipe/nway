@@ -3,6 +3,7 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background: white;
 
     #main-page-wrapper {
         width: 100%;
@@ -30,7 +31,14 @@ main {
                     padding: 1rem;
                     margin: 0 .5rem;
 
+                    h2 {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+
                     h3 {
+                        font-size: 1.25rem;
+                        font-weight: 700;
                         margin-top: .5rem;
                     }
                 }
@@ -64,7 +72,7 @@ main {
                         justify-content: space-between;
                         align-items: center;
 
-                        .status-header-custom-label {
+                        .status-header-custom-text {
                             font-size: 1.25rem;
                         }
                     }
@@ -90,7 +98,7 @@ main {
                                     .notification-data {
                                         display: flex;
 
-                                        .custom-label {
+                                        .custom-text {
                                             margin-left: 1rem;
                                         }
                                     }
@@ -117,7 +125,7 @@ main {
                 .energy-chart-header {
                     width: 100%;
 
-                    #energy-chart-header-label {
+                    #energy-chart-header-text {
                         font-size: 1.25rem;
                     }
                 }

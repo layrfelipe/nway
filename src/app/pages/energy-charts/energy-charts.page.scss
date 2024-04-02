@@ -3,6 +3,7 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background: white;
 
     #main-page-wrapper {
         width: 100%;
@@ -18,6 +19,12 @@ main {
             flex-direction: column;
             padding: 2rem;
 
+            h2 {
+                margin-bottom: 1.55rem;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+
             #charts-options-row {
                 display: flex;
                 justify-content: space-between;
@@ -29,7 +36,12 @@ main {
                     width: 100%;
                     padding: 1rem;
                     margin: 0 .5rem;
-                    font-weight: 700;
+                    
+                    h3 {
+                        color: black;
+                        font-weight: 700;
+                        font-size: 1rem;
+                    }
                 }
 
                 :first-child {

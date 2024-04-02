@@ -3,6 +3,7 @@ main {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background: white;
 
     #main-page-wrapper {
         width: 100%;
@@ -51,7 +52,6 @@ main {
     
                             h6 {
                                 font-size: .8rem;
-                                color: #b7b7b7;
                                 margin-top: .5rem;
                                 cursor: pointer;
                             }
@@ -66,14 +66,12 @@ main {
 
                         h6 {
                             font-size: .8rem;
-                            color: #b7b7b7;
                             margin-top: .5rem;
                         }
                     }
                 }
 
                 span {
-                    color: #92949C;
                     font-size: .8rem;
                     display: inline-block;
                     margin-top: 1rem;

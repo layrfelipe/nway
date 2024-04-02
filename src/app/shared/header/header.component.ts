@@ -1,6 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnDestroy, signal } from '@angular/core';
-import { Event, NavigationEnd, NavigationStart, Router, Scroll } from '@angular/router';
+import { Event, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -65,6 +65,10 @@ export class HeaderComponent implements OnDestroy {
 
   back() {
     this.location.back()
+  }
+
+  goToHomePage() {
+    this.router.navigate(['inicio'])
   }
     
   ngOnDestroy() {

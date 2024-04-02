@@ -14,3 +14,23 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+:root {
+    --ion-text-color: black;
+    --ion-text-color-rgb: rgb(0, 0, 0);
+    --ion-color-custom-secondary: #FBAE17;
+    --ion-color-custom-secondary-rgb: 251,174,23;
+    --ion-color-custom-secondary-contrast: #000000;
+    --ion-color-custom-secondary-contrast-rgb: 0,0,0;
+    --ion-color-custom-secondary-shade: #dd9914;
+    --ion-color-custom-secondary-tint: #fbb62e;
+}
+
+.ion-color-custom-secondary {
+	--ion-color-base: var(--ion-color-custom-secondary);
+	--ion-color-base-rgb: var(--ion-color-custom-secondary-rgb);
+	--ion-color-contrast: var(--ion-color-custom-secondary-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-custom-secondary-contrast-rgb);
+	--ion-color-shade: var(--ion-color-custom-secondary-shade);
+	--ion-color-tint: var(--ion-color-custom-secondary-tint);
+}

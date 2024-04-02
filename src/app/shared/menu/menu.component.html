@@ -2,58 +2,58 @@
     <ion-list class="custom-list">
         <ion-item-group>
             <ion-item class="custom-list-item" (click)="goToHomePage()">
-                <ion-icon name="home-outline" [color]="selectedMenuOption() == '/inicio' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Início</ion-label>
+                <ion-icon name="home-outline" [color]="selectedMenuOption() == '/inicio' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Início</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToRequestsPage()">
-                <ion-icon name="list-outline" [color]="selectedMenuOption() == '/solicitacoes' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Solicitações</ion-label>
+                <ion-icon name="list-outline" [color]="selectedMenuOption() == '/solicitacoes' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Solicitações</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToCustomersPage()">
-                <ion-icon name="people-outline" [color]="selectedMenuOption() == '/clientes' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Clientes</ion-label>
+                <ion-icon name="people-outline" [color]="selectedMenuOption() == '/clientes' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Clientes</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToEnergyChartsPage()">
-                <ion-icon name="pie-chart-outline" [color]="selectedMenuOption() == '/graficos-de-energia' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Gráficos de energia</ion-label>
+                <ion-icon name="pie-chart-outline" [color]="selectedMenuOption() == '/graficos-de-energia' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Gráficos de energia</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToMeasurementQueryPage()">
-                <ion-icon name="speedometer-outline" [color]="selectedMenuOption() == '/consulta-de-medicao' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Consulta de medição</ion-label>
+                <ion-icon name="speedometer-outline" [color]="selectedMenuOption() == '/consulta-de-medicao' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Consulta de medição</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToWebhooksPage()">
-                <ion-icon name="notifications-outline" [color]="selectedMenuOption() == '/webhooks' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Webhooks</ion-label>
+                <ion-icon name="notifications-outline" [color]="selectedMenuOption() == '/webhooks' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Webhooks</ion-text>
             </ion-item>
         </ion-item-group>
         <ion-item-group>
             <ion-item-divider id="menu-options-divider">
-                <ion-label>Gerenciamento</ion-label>
+                <ion-text color="light">Gerenciamento</ion-text>
             </ion-item-divider>
 
             <ion-item class="custom-list-item" (click)="goToProfilePage()">
-                <ion-icon name="person-circle" [color]="selectedMenuOption() == '/perfil' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Perfil</ion-label>
+                <ion-icon name="person-circle" [color]="selectedMenuOption() == '/perfil' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Perfil</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToConfigsPage()">
-                <ion-icon name="settings-outline" [color]="selectedMenuOption() == '/configs' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Configurações</ion-label>
+                <ion-icon name="settings-outline" [color]="selectedMenuOption() == '/configs' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Configurações</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToFinancesPage()">
-                <ion-icon name="cash-outline" [color]="selectedMenuOption() == '/financeiro' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Financeiro</ion-label>
+                <ion-icon name="cash-outline" [color]="selectedMenuOption() == '/financeiro' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Financeiro</ion-text>
             </ion-item>
     
             <ion-item class="custom-list-item" (click)="goToLogExplorerPage()">
-                <ion-icon name="folder-outline" [color]="selectedMenuOption() == '/logs' ? 'secondary' : 'medium'"/>
-                <ion-label class="custom-item-label">Log explorer</ion-label>
+                <ion-icon name="folder-outline" [color]="selectedMenuOption() == '/logs' ? 'custom-secondary' : 'medium'"/>
+                <ion-text color="light" class="custom-item-text">Log explorer</ion-text>
             </ion-item>
         </ion-item-group>
     </ion-list>
