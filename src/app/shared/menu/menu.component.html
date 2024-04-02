@@ -1,32 +1,32 @@
 <div id="menu-container">
     <ion-list class="custom-list">
         <ion-item-group>
-            <ion-item class="custom-list-item" (click)="goToHomePage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToHomePage()">
                 <ion-icon name="home-outline" [color]="selectedMenuOption() == '/inicio' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Início</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToRequestsPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToRequestsPage()">
                 <ion-icon name="list-outline" [color]="selectedMenuOption() == '/solicitacoes' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Solicitações</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToCustomersPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToCustomersPage()">
                 <ion-icon name="people-outline" [color]="selectedMenuOption() == '/clientes' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Clientes</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToEnergyChartsPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToEnergyChartsPage()">
                 <ion-icon name="pie-chart-outline" [color]="selectedMenuOption() == '/graficos-de-energia' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Gráficos de energia</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToMeasurementQueryPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToMeasurementQueryPage()">
                 <ion-icon name="speedometer-outline" [color]="selectedMenuOption() == '/consulta-de-medicao' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Consulta de medição</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToWebhooksPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToWebhooksPage()">
                 <ion-icon name="notifications-outline" [color]="selectedMenuOption() == '/webhooks' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Webhooks</ion-text>
             </ion-item>
@@ -36,22 +36,22 @@
                 <ion-text color="light">Gerenciamento</ion-text>
             </ion-item-divider>
 
-            <ion-item class="custom-list-item" (click)="goToProfilePage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToProfilePage()">
                 <ion-icon name="person-circle" [color]="selectedMenuOption() == '/perfil' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Perfil</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToConfigsPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToConfigsPage()">
                 <ion-icon name="settings-outline" [color]="selectedMenuOption() == '/configs' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Configurações</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToFinancesPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToFinancesPage()">
                 <ion-icon name="cash-outline" [color]="selectedMenuOption() == '/financeiro' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Financeiro</ion-text>
             </ion-item>
     
-            <ion-item class="custom-list-item" (click)="goToLogExplorerPage()">
+            <ion-item lines="none" class="custom-list-item" (click)="goToLogExplorerPage()">
                 <ion-icon name="folder-outline" [color]="selectedMenuOption() == '/logs' ? 'custom-secondary' : 'medium'"/>
                 <ion-text color="light" class="custom-item-text">Log explorer</ion-text>
             </ion-item>

@@ -1,0 +1,65 @@
+<main>
+    <app-header></app-header>
+
+    <div id="main-page-wrapper">
+        <div id="menu-wrapper">
+            <app-menu></app-menu>
+        </div>
+
+        <div id="main-content-wrapper">
+            <div id="requests-status-wrapper">
+                <ion-text color="dark">
+                    <h5>SunWave Energy Solutions</h5>
+                </ion-text>
+                <ion-text color="medium">
+                    <p>CNPJ: 01.010.001/0001-11</p>
+                </ion-text>
+                
+                <ion-button color="warning">Solicitação em andamento</ion-button>
+
+                <ion-list>
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Fechar negócio e assinar o Contrato de Compra e Venda (CCV).</p></ion-text>
+                    </ion-item>
+
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Emitir carta de denúncia para a Distribuidora atual.</p></ion-text>
+                    </ion-item>
+
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Informar a distribuidora sobre a intenção de migrar a Unidade Consumidora.</p></ion-text>
+                    </ion-item>
+
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="time" color="warning"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="dark" class="request-status-description"><p>Solicitar confirmação de migração por parte da Distribuidora.</p></ion-text>
+                    </ion-item>
+
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="time" color="medium"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Confirmar a migração, fornecendo os dados de consumo detalhados.</p></ion-text>
+                    </ion-item>
+
+                    <ion-item lines="none" class="custom-item">
+                        <ion-icon name="time" color="medium"></ion-icon>
+                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Oficializar a migração para o Ambiente de Contratação Livre (ACL).</p></ion-text>
+                    </ion-item>
+                </ion-list>
+
+                <div id="show-customer-data-btn">
+                    <ion-text color="success"><h6>EXIBIR DADOS DO CLIENTE</h6></ion-text>
+                    <ion-icon id="arrow-icon" name="arrow-forward-outline" color="success"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

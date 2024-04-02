@@ -53,9 +53,11 @@ const routes: Routes = [
   }
 ];
 
+// remove use hash and apply nginx/node/apache server side config
+// see more about this later on https://stackoverflow.com/questions/50907736/refreshing-the-page-results-in-404-error-angular-6/50910433
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, useHash: true })
   ],
   exports: [RouterModule]
 })
