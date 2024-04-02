@@ -1,4 +1,6 @@
 <main>
+    <img src="assets/logo.png"/>
+    
     <div id="login-wrapper">
         <ion-input
             class="login-input"
@@ -7,6 +9,7 @@
             placeholder="Digite aqui"
             [value]="userInput()"
             (ionChange)="onChangeUserInput($event)"
+            fill="outline"
         />
 
         <ion-input
@@ -17,6 +20,7 @@
             type="password"
             [value]="passwordInput()"
             (ionChange)="onChangePasswordInput($event)"
+            fill="outline"
         />
         <ion-button (click)="login()">Login</ion-button>
         <ion-button (click)="mockData()" color="warning">Mock</ion-button>
