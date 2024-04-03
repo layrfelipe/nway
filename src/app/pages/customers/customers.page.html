@@ -17,7 +17,7 @@
                         <h2>Clientes ativos</h2>
                     </ion-text>
 
-                    <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                    <ion-icon name="filter-outline" color="medium" [size]="isMobile() ? 'small': 'large'"></ion-icon>
                 </div>
     
                 <table>
@@ -36,56 +36,56 @@
                             <td>SunWave Energy Solutions</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>DigitalHealth Tech</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>MediaTech Solutions</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="warning" size="small">Em manutenção</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="warning" size="small">Em manutenção</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>TechFood Delivery</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>CleanTech Innovations</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>EduTech Academy</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>AgriTech Farming Solutions</td>
                             <td>20/05/2024</td>
                             <td>Basic</td>
-                            <td><ion-button color="success" size="small">Ativa</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
                     </tbody>
                 </table>
@@ -101,7 +101,7 @@
                         <h2>Clientes inativos</h2>
                     </ion-text>
 
-                    <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                    <ion-icon name="filter-outline" color="medium" [size]="isMobile() ? 'small': 'large'"></ion-icon>
                 </div>
 
                 <table>
@@ -117,22 +117,22 @@
                         <tr class="table-custom-row">
                             <td>FinTech Express</td>
                             <td>20/05/2024</td>
-                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>BioTech Innovations</td>
                             <td>20/05/2024</td>
-                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>RoboTech Systems</td>
                             <td>20/05/2024</td>
-                            <td><ion-button color="medium" size="small">Inativo</ion-button></td>
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
+                            <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
+                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                         </tr>
                     </tbody>
                 </table>

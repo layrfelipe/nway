@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['customers.page.scss'],
 })
 export class CustomersPage {
+
+  protected screenWidth = signal<number>(0)
+  protected isMobile = computed(() => {
+    return this.screenWidth() < 993
+  })
 
   constructor(
     private router: Router
