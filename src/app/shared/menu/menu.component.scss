@@ -1,35 +1,259 @@
-#menu-container {
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background: #454545;
-    
-    .custom-list {
-        padding-bottom: 0;
+@media(max-width: 576px) {
+    #menu-container {
+        width: 100%;
+        background: #454545;
         
-        --ion-item-background: #454545;
-
-        ion-item-divider {
-            --background: #454545;
-        }
-        
-        .custom-list-item {
-            cursor: pointer;
-            margin-bottom: .5rem;
+        .custom-list {
+            padding-bottom: 0;
             
-            .custom-item-text {
-                margin-left: .5rem;
-                font-size: .9rem;
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
             }
         }
+    }
+}
 
-        :last-child {
-            margin-bottom: 0;
+@media (min-width: 577px) and (max-width: 768px) {
+    #menu-container {
+        width: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
         }
+    }    
+}
 
-        #menu-options-divider {
-            padding-top: 1.5rem;
-            padding-bottom: 1rem;
+@media (min-width: 577px) and (max-width: 992px) {
+    #menu-container {
+        width: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }    
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    #menu-container {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }    
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    #menu-container {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    #menu-container {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    #menu-container {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        background: #454545;
+        
+        .custom-list {
+            padding-bottom: 0;
+            
+            --ion-item-background: #454545;
+    
+            ion-item-divider {
+                --background: #454545;
+            }
+            
+            .custom-list-item {
+                cursor: pointer;
+                margin-bottom: .5rem;
+                
+                .custom-item-text {
+                    margin-left: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            :last-child {
+                margin-bottom: 0;
+            }
+    
+            #menu-options-divider {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+            }
         }
     }
 }

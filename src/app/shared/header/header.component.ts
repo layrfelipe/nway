@@ -12,6 +12,7 @@ export class HeaderComponent implements OnDestroy {
   private routerSubscription;
   protected pageTitle = signal<string>(this.router.url)
   protected showBackButton = signal<boolean>(true)
+  protected expandMobileMenu = signal<boolean>(false)
 
   constructor(
     private router: Router,
@@ -87,6 +88,10 @@ export class HeaderComponent implements OnDestroy {
 
   goToHomePage() {
     this.router.navigate(['inicio'])
+  }
+
+  toggleExpandMobileMenuState() {
+    this.expandMobileMenu.update((value: boolean) => !value)
   }
     
   ngOnDestroy() {

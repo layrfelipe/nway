@@ -1,12 +1,24 @@
-<div id="header-container">
-    <div id="logo">
-        <img src="assets/logo.png" (click)="goToHomePage()"/>
+<div id="full-header-container">
+    <div id="header-container">
+        <div id="logo">
+            <img src="assets/logo.png" (click)="goToHomePage()"/>
+        </div>
+    
+        <div id="navigation-header">
+            @if(showBackButton()) {
+                <ion-icon id="back-btn-header" name="arrow-back-outline" size="large" (click)="back()"></ion-icon>
+            }
+            <ion-text id="page-title-label">
+                <span>{{pageTitle()}}</span>
+            </ion-text>
+    
+            <ion-icon (click)="toggleExpandMobileMenuState()" name="menu-outline" color="light" size="large" id="mobile-menu-btn"></ion-icon>
+        </div>
     </div>
 
-    <div id="navigation-header">
-        @if(showBackButton()) {
-            <ion-icon id="back-btn-header" name="arrow-back-outline" color="medium" size="large" (click)="back()"></ion-icon>
-        }
-        <ion-label id="page-title-label" color="dark">{{pageTitle()}}</ion-label>
-    </div>
+    @if(expandMobileMenu()) {
+        <div id="expansion">
+            <app-menu></app-menu>
+        </div>
+    }
 </div>
