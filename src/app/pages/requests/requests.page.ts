@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,11 +6,20 @@ import { Router } from '@angular/router';
   templateUrl: 'requests.page.html',
   styleUrls: ['requests.page.scss'],
 })
-export class RequestsPage {
+export class RequestsPage implements OnInit {
+
+  protected screenWidth = signal<number>(0)
+  protected isMobile = computed(() => {
+    return this.screenWidth() < 993
+  })
 
   constructor(
     private router: Router
   ) {}
+
+  ngOnInit() {
+    this.screenWidth.set(window.innerWidth);
+  }
 
   goToRequestStatusPage() {
     this.router.navigate(['solicitacoes', 'status'])
