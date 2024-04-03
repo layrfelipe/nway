@@ -13,9 +13,13 @@
             </div>
 
             <div id="my-requests-table-wrapper">
-                <ion-text color="dark">
-                    <h2>Minhas solicitações</h2>
-                </ion-text>
+                <div id="content-header">
+                    <ion-text color="dark">
+                        <h2>Minhas solicitações</h2>
+                    </ion-text>
+
+                    <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                </div>
 
                 <table>
                     <thead>
@@ -24,6 +28,7 @@
                             <th>Data da solicitação</th>
                             <th>Tipo de solicitação</th>
                             <th>Status</th>
+                            <th></th>
                         </tr>
                     </thead>
 
@@ -33,6 +38,7 @@
                             <td>20/05/2024</td>
                             <td>Suspensão</td>
                             <td><ion-button color="warning" size="small">Aguardando resposta</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -40,6 +46,7 @@
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
                             <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -47,6 +54,7 @@
                             <td>20/05/2024</td>
                             <td>Suspensão</td>
                             <td><ion-button color="danger" size="small">Negada</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -54,6 +62,7 @@
                             <td>20/05/2024</td>
                             <td>Migração</td>
                             <td><ion-button color="success" size="small">Concluída</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -61,6 +70,7 @@
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
                             <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -68,6 +78,7 @@
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
                             <td><ion-button color="success" size="small">Concluída</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -75,6 +86,7 @@
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
                             <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -82,6 +94,7 @@
                             <td>20/05/2024</td>
                             <td>Migração</td>
                             <td><ion-button color="success" size="small">Concluída</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -89,6 +102,7 @@
                             <td>20/05/2024</td>
                             <td>Migração</td>
                             <td><ion-button color="warning" size="small">Em andamento</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
@@ -96,11 +110,15 @@
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
                             <td><ion-button color="danger" size="small">Negada</ion-button></td>
+                            <td><ion-icon color="medium" name="chevron-forward-outline" size="large"></ion-icon></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <span>Mostrando 10 de 690</span>
+                <div id="table-footer">
+                    <span id="count-span">Mostrando 10 de 690</span>
+                    <ion-button fill="clear" color="primary" size="small">Ver mais</ion-button>
+                </div>
             </div>
         </div>
     </div>

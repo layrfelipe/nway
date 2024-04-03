@@ -8,15 +8,19 @@
 
         <div id="main-content-wrapper">
             <div id="measurement-queries-table-wrapper">
-                <ion-text color="dark">
-                    <h2>Consulta de medição</h2>
-                </ion-text>
+                <div id="content-header">
+                    <ion-text color="dark">
+                        <h2>Consulta de medição</h2>
+                    </ion-text>
+
+                    <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                </div>
 
                 <div id="search-company-container">
                     <div id="search-company-wrapper">
                         <ion-input placeholder="Pesquise pelo nome ou CNPJ do cliente" fill="outline">
                             <ion-icon slot="start" name="search-outline" color="medium" aria-hidden="true"></ion-icon>
-                          </ion-input>
+                        </ion-input>
                     </div>
                 </div>
     
@@ -27,6 +31,7 @@
                             <th>Situação financeira</th>
                             <th>Consumo último mês</th>
                             <th></th>
+                            <th></th>
                         </tr>
                     </thead>
     
@@ -35,54 +40,63 @@
                             <td>SunWave Energy Solutions</td>
                             <td><ion-label color="success">última fatura paga</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>DigitalHealth Tech</td>
                             <td><ion-label color="success">última fatura paga</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>MediaTech Solutions</td>
                             <td><ion-label color="success">última fatura paga</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>TechFood Delivery</td>
                             <td><ion-label color="danger">3 faturas em atraso</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>CleanTech Innovations</td>
                             <td><ion-label color="success">última fatura paga</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>EduTech Academy</td>
                             <td><ion-label color="success">última fatura paga</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
                             <td>AgriTech Farming Solutions</td>
                             <td><ion-label color="danger">3 faturas em atraso</ion-label></td>
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo <span><ion-icon name="chevron-forward-outline" color="medium"></ion-icon></span></td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <span id="count-span">Mostrando 7 de 690</span>
+                <div id="table-footer">
+                    <span id="count-span">Mostrando 7 de 7</span>
+                </div>
             </div>
         </div>
     </div>

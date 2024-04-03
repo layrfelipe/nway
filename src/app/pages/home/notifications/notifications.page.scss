@@ -25,8 +25,19 @@ main {
                 border-radius: 1rem;
                 padding: 1rem;
 
-                h2 {
-                    margin-bottom: 1rem;
+                #content-header {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    
+                    h2 {
+                        margin-bottom: 1rem;
+                    }
+
+                    ion-icon {
+                        cursor: pointer;
+                    }
                 }
 
                 .custom-notification-item-row {
@@ -71,11 +82,17 @@ main {
                     }
                 }
 
-                span {
-                    color: #92949C;
-                    font-size: .8rem;
-                    display: inline-block;
-                    margin-top: 1rem;
+                #table-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1.5rem;
+
+                    #count-span {
+                        color: #92949C;
+                        font-size: .8rem;
+                        display: inline-block;
+                    }
                 }
             }
         }

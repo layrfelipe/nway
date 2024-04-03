@@ -25,16 +25,27 @@ main {
                 }
             }
 
+            .content-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+                h2 {
+                    margin-bottom: 1rem;
+                }
+
+                ion-icon {
+                    cursor: pointer;
+                }
+            }
+
             #my-active-customers-table-wrapper {
                 width: 100%;
                 border: 1px solid #b7b7b7;
                 border-radius: 1rem;
                 margin-top: 2rem;
                 padding: 1rem;
-
-                h2 {
-                    margin-bottom: 3rem;
-                }
 
                 table {
                     width: 100%;
@@ -59,6 +70,11 @@ main {
 
                             td {
                                 padding: .5rem 0;
+
+                                ion-icon {
+                                    vertical-align: middle;
+                                    cursor: pointer;
+                                }
                             }
                         }
                     }
@@ -102,6 +118,19 @@ main {
                             }
                         }
                     }
+                }
+            }
+
+            .table-footer {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.5rem;
+
+                #count-span {
+                    color: #92949C;
+                    font-size: .8rem;
+                    display: inline-block;
                 }
             }
         }

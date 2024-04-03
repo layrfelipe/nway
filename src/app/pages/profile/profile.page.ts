@@ -1,5 +1,5 @@
-import { Location } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
 export class ProfilePage {
 
   constructor(
-    private location: Location
+    private router: Router
   ) { }
 
   back() {
-    this.location.back()
+    this.router.navigate(['inicio'])
   }
 }

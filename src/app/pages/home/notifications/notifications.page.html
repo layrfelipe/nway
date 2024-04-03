@@ -8,9 +8,13 @@
 
         <div id="main-content-wrapper">
             <div id="my-notifications-wrapper">
-                <ion-text color="dark">
-                    <h2>Minhas notificações</h2>
-                </ion-text>
+                <div id="content-header">
+                    <ion-text color="dark">
+                        <h2>Minhas notificações</h2>
+                    </ion-text>
+
+                    <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                </div>
 
                 <ion-list>
                     <ion-item>
@@ -131,7 +135,10 @@
                     </ion-item>
                 </ion-list>
 
-                <span>Mostrando 10 de 690</span>
+                <div id="table-footer">
+                    <span id="count-span">Mostrando 5 de 690</span>
+                    <ion-button fill="clear" color="primary" size="small">Ver mais</ion-button>
+                </div>
             </div>
         </div>
     </div>

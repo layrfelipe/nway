@@ -19,18 +19,28 @@ main {
             flex-direction: column;
             padding: 2rem;
 
-            #charts-options-row {
+            #finances-indicators-row {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
 
-                .option-wrapper {
+                .indicator-wrapper {
                     border: 1px solid #b7b7b7;
                     border-radius: 1rem;
                     width: 100%;
                     padding: 1rem;
                     margin: 0 .5rem;
-                    font-weight: 700;
+
+                    h2 {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+
+                    h3 {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        margin-top: .5rem;
+                    }
                 }
 
                 :first-child {

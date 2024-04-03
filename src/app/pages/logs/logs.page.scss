@@ -71,10 +71,17 @@ main {
                     }
                 }
 
-                span {
-                    font-size: .8rem;
-                    display: inline-block;
-                    margin-top: 1rem;
+                #table-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1.5rem;
+
+                    #count-span {
+                        color: #92949C;
+                        font-size: .8rem;
+                        display: inline-block;
+                    }
                 }
             }
         }

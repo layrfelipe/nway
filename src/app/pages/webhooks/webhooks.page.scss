@@ -60,19 +60,26 @@ main {
                             td {
                                 padding: .5rem 0;
 
-                                #chevron-icon {
-                                    margin-left: 3rem;
+                                ion-icon {
+                                    vertical-align: middle;
+                                    cursor: pointer;
                                 }
                             }
                         }
                     }
                 }
 
-                #count-span {
-                    color: #92949C;
-                    font-size: .8rem;
-                    display: inline-block;
-                    margin-top: 1rem;
+                #table-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1.5rem;
+
+                    #count-span {
+                        color: #92949C;
+                        font-size: .8rem;
+                        display: inline-block;
+                    }
                 }
             }
         }

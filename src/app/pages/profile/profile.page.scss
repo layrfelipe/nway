@@ -22,12 +22,16 @@ main {
             .inputs-wrapper {
                 width: 50%;
 
+                ion-icon {
+                    cursor: pointer;
+                }
+
                 .custom-label {
                     font-size: 1rem;
                 }
 
                 .custom-input {
-                    font-size: .9rem;
+                    font-size: 1rem;
                 }
             }
 
