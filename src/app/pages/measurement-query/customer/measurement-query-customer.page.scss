@@ -31,32 +31,44 @@ main {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-                    
-                    h2 {
-                        margin-bottom: 1rem;
-                    }
 
-                    ion-icon {
-                        cursor: pointer;
-                    }
-                }
-
-                #search-company-container {
-                    width: 100%;
-                    display: flex;
-                    margin: 1.5rem 0 3rem 0;
-
-                    #search-company-wrapper {
-                        width: 100%;
+                    #company-name-and-cnpj-wrapper {
                         display: flex;
-                        align-items: center;
-                        color: black
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        h5 {
+                            font-weight: 700;
+                        }
+                        
+                        p {
+                            font-size: .9rem;
+                            font-weight: 700;
+                            margin-bottom: 1rem;
+                        }
                     }
+                    
+                    #filter-and-year-wrapper {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        span {
+                            font-weight: 700;
+                        }
+
+                        ion-icon {
+                            cursor: pointer;
+                            margin-left: .5rem;
+                        }
+                    }
+
                 }
 
                 table {
                     width: 100%;
                     text-align: center;
+                    margin-top: 2rem;
 
                     thead {
                         color: #9f9f9f;
@@ -83,10 +95,6 @@ main {
                                     cursor: pointer;
                                 }
                             }
-
-                            .consumption-report-column {
-                                cursor: pointer;
-                            }
                         }
                     }
                 }
@@ -103,6 +111,28 @@ main {
                         display: inline-block;
                     }
                 }
+            }
+
+            #payment-warning-wrapper {
+                margin-top: 2rem;
+                width: 100%;
+                background: #F0F0F0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: .5rem;
+                border-radius: 1rem;
+
+                span {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-left: .5rem;
+                }
+            }
+
+            #cancel-energy-supply-btn {
+                width: fit-content;
+                margin-top: 1rem;
             }
         }
     }

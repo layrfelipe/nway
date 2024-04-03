@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-measurement-query',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class MeasurementQueryPage {
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
+  goToMeasurementQueryCustomerPage() {
+    this.router.navigate(['consulta-de-medicao', 'cliente'])    
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-request-status',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
 export class RequestStatusPage {
 
   constructor(
+    private router: Router
   ) {}
+
+  goToCustomerDetailPage() {
+    this.router.navigate(['clientes/cliente'])
+  }
 }

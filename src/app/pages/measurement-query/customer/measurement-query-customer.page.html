@@ -1,0 +1,93 @@
+<main>
+    <app-header></app-header>
+
+    <div id="main-page-wrapper">
+        <div id="menu-wrapper">
+            <app-menu></app-menu>
+        </div>
+
+        <div id="main-content-wrapper">
+            <div id="measurement-queries-table-wrapper">
+                <div id="content-header">
+                    <div id="company-name-and-cnpj-wrapper">
+                        <ion-text color="dark">
+                            <h5>SunWave Energy Solutions</h5>
+                        </ion-text>
+    
+                        <ion-text color="medium">
+                            <p>CNPJ: 01.010.001/0001-11</p>
+                        </ion-text>
+                    </div>
+
+                    <div id="filter-and-year-wrapper">
+                        <ion-text color="medium">
+                            <span>2024</span>
+                        </ion-text>
+                        <ion-icon name="filter-outline" color="medium" size="large"></ion-icon>
+                    </div>
+                </div>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                            <th>Consumo do mês</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr class="table-custom-row">
+                            <td>Março</td>
+                            <td>R$3.941,32</td>
+                            <td>
+                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                            </td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>Fevereiro</td>
+                            <td>R$3.941,32</td>
+                            <td>
+                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                            </td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
+                        </tr>
+
+                        <tr class="table-custom-row">
+                            <td>Janeiro</td>
+                            <td>R$3.941,32</td>
+                            <td>
+                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                            </td>
+                            <td>100.000 kWh</td>
+                            <td>Relatório de consumo</td>
+                            <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="table-footer">
+                    <span id="count-span">Mostrando 3 de 3</span>
+                </div>
+            </div>
+
+            <div id="payment-warning-wrapper">
+                <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
+                <ion-text color="dark">
+                    <span>Atenção: esse cliente encontra-se com 3 faturas em atraso. De acordo com o contrato, a suspensão de fornecimento pode ser solicitada.</span>
+                </ion-text>
+            </div>
+
+            <ion-button color="success" fill="outline" id="cancel-energy-supply-btn">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
+        </div>
+    </div>
+</main>
