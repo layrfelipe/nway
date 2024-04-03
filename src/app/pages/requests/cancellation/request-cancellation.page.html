@@ -1,0 +1,75 @@
+<main>
+    <app-header></app-header>
+
+    <div id="main-page-wrapper">
+        <div id="menu-wrapper">
+            <app-menu></app-menu>
+        </div>
+
+        <div id="main-content-wrapper">
+            <h2>Selecione o cliente a ser suspenso</h2>
+
+            <div id="search-wrapper">
+                <ion-input placeholder="Pesquise pelo nome ou CNPJ do cliente" fill="outline">
+                    <ion-icon slot="start" name="search-outline" color="medium" aria-hidden="true"></ion-icon>
+                </ion-input>
+            </div>
+
+            <div id="selected-customer-card">
+                <ion-text color="medium"><h6 id="header">Informações do cliente</h6></ion-text>
+
+                <ion-text color="dark"><h3 id="company">SunWave Energy Solutions</h3></ion-text>
+
+                <ion-text color="medium"><h5 id="cnpj">CNPJ: 01.010.000/0001-00</h5></ion-text>
+
+                <div id="last-customer-data-row">
+                    <div class="data-wrapper">
+                        <ion-text>
+                            <h6 color="medium" class="sub-header">Número do documento</h6>
+                        </ion-text>
+                        <ion-text>
+                            <h6>11157227783</h6>
+                        </ion-text>
+                    </div>
+                    
+                    <div class="data-wrapper">
+                        <ion-text>
+                            <h6 color="medium" class="sub-header">Código conectado</h6>
+                        </ion-text>
+                        <ion-text>
+                            <h6>117</h6>
+                        </ion-text>
+                    </div>
+
+                    <div class="data-wrapper">
+                        <ion-text>
+                            <h6 color="medium" class="sub-header">Tipo de documento</h6>
+                        </ion-text>
+                        <ion-text>
+                            <h6>CPF</h6>
+                        </ion-text>
+                    </div>
+
+                    <div class="data-wrapper">
+                        <ion-text>
+                            <h6 color="medium" class="sub-header">Código de perfil</h6>
+                        </ion-text>
+                        <ion-text>
+                            <h6>110</h6>
+                        </ion-text>
+                    </div>
+                </div>
+            </div>
+
+            <ion-text color="medium" id="cancellation-reason-header">
+                <h6>Motivo de suspensão do fornecimento</h6>
+            </ion-text>
+            
+            <div id="reason-text-wrapper">
+                <ion-textarea [autoGrow]="true" placeholder="Digite o motivo da solicitação" fill="outline"></ion-textarea>
+            </div>
+
+            <ion-button color="success">SOLICITAR SUSPENSÃO</ion-button>
+        </div>
+    </div>
+</main>

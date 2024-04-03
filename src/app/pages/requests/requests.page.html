@@ -8,8 +8,8 @@
 
         <div id="main-content-wrapper">
             <div id="requests-buttons-actions">
-                <ion-button color="success">SOLICITAR MIGRAÇÃO</ion-button>
-                <ion-button color="success" fill="outline">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
+                <ion-button color="success" (click)="goToRequestMigrationPage()">SOLICITAR MIGRAÇÃO</ion-button>
+                <ion-button color="success" (click)="goToRequestCancellationPage()" fill="outline">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
             </div>
 
             <div id="my-requests-table-wrapper">

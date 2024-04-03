@@ -15,5 +15,12 @@ export class RequestsPage {
   goToRequestStatusPage() {
     this.router.navigate(['solicitacoes', 'status'])
   }
+  goToRequestMigrationPage() {
+    this.router.navigate(['solicitacoes', 'migracao'])
+  }
+
+  goToRequestCancellationPage() {
+    this.router.navigate(['solicitacoes', 'cancelamento'])
+  }
 
 }
