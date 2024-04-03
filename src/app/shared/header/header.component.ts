@@ -60,6 +60,12 @@ export class HeaderComponent implements OnDestroy {
         case "solicitacoes/status":
           this.pageTitle.set("Status da solicitação")
           break;
+        case "clientes/cliente":
+          this.pageTitle.set("Cliente")
+          break;
+        case "clientes/registro":
+          this.pageTitle.set("Cadastro de novo cliente")
+          break;
         default:
           this.pageTitle.set("")
       }
