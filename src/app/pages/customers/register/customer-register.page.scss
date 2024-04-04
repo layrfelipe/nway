@@ -1,43 +1,322 @@
-main {
-    width: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: white;
-
-    #main-page-wrapper {
+@media(max-width: 576px) {
+    main {
         width: 100%;
+        overflow-y: auto;
         display: flex;
-
-        #menu-wrapper {
-            width: 15%;
-        }
-
-        #main-content-wrapper {
-            width: 85%;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            padding: 2rem;
-
-            .inputs-wrapper {
-                width: 50%;
-
-                ion-icon {
-                    cursor: pointer;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                .inputs-wrapper {
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
                 }
-
-                .custom-label {
-                    font-size: 1rem;
-                }
-
-                .custom-input {
-                    font-size: 1rem;
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
                 }
             }
+        }
+    }    
+}
 
-            #btns-wrapper {
-                margin-top: 2vh;
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                .inputs-wrapper {
+                    width: 75%;
+                    
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                .inputs-wrapper {
+                    width: 75%;
+
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
             }
         }
     }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                .inputs-wrapper {
+                    width: 50%;
+    
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }    
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                .inputs-wrapper {
+                    width: 50%;
+    
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                .inputs-wrapper {
+                    width: 50%;
+    
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1921px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                .inputs-wrapper {
+                    width: 50%;
+    
+                    ion-icon {
+                        cursor: pointer;
+                    }
+    
+                    .custom-label {
+                        font-size: 1rem;
+                    }
+    
+                    .custom-input {
+                        font-size: 1rem;
+                    }
+                }
+    
+                #btns-wrapper {
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }    
 }
