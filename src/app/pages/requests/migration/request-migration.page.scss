@@ -1,74 +1,395 @@
-main {
-    width: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: white;
-
-    #main-page-wrapper {
+@media(max-width: 576px) {
+    main {
         width: 100%;
+        overflow-y: auto;
         display: flex;
-
-        #menu-wrapper {
-            width: 15%;
-        }
-
-        #main-content-wrapper {
-            width: 85%;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            padding: 2rem;
-
-            h2 {
-                font-weight: 700;
-                font-size: 1.5rem;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
             }
-
-            #search-wrapper {
-                margin: 1rem 0;
-            }
-
-            #selected-customer-card {
-                padding: 1rem;
-                border: 1px solid #b7b7b7;
-                border-radius: 1rem;
-                margin: 1rem 0;
-
-                #header {
-                    font-size: .8rem;
-                    font-weight: 600;
-                    margin-bottom: .5rem;
-                }
-
-                #company {
-                    font-size: 1.5rem;
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                h2 {
                     font-weight: 700;
+                    font-size: 1.5rem;
                 }
-
-                #cnpj {
-                    font-size: .9rem;
-                    font-weight: 600;
+    
+                #search-wrapper {
+                    margin: 1rem 0;
                 }
-
-                #last-customer-data-row {
-                    margin-top: 1.5rem;
-                    display: flex;
-                    width: 100%;
-
-                    .data-wrapper{
-                        margin-right: 2rem;
-
-                        .sub-header {
-                            font-weight: 700;
+    
+                #selected-customer-card {
+                    padding: 1rem;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    margin: 1rem 0;
+    
+                    #header {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+    
+                    #company {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+    
+                    #cnpj {
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    
+                    #last-customer-data-row {
+                        margin-top: 1.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+    
+                        .data-wrapper{
+                            margin-bottom: 1rem;
+    
+                            .sub-header {
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
-            }
-
-            ion-button {
-                margin-top: 1rem;
-                width: fit-content;
+    
+                ion-button {
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
             }
         }
-    }
+    }    
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+       
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+    
+                #search-wrapper {
+                    margin: 1rem 0;
+                }
+    
+                #selected-customer-card {
+                    padding: 1rem;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    margin: 1rem 0;
+    
+                    #header {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+    
+                    #company {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+    
+                    #cnpj {
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    
+                    #last-customer-data-row {
+                        margin-top: 1.5rem;
+                        display: flex;
+                        width: 100%;
+    
+                        .data-wrapper{
+                            margin-right: 2rem;
+    
+                            .sub-header {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+    
+                ion-button {
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }    
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+    
+                #search-wrapper {
+                    margin: 1rem 0;
+                }
+    
+                #selected-customer-card {
+                    padding: 1rem;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    margin: 1rem 0;
+    
+                    #header {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+    
+                    #company {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+    
+                    #cnpj {
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    
+                    #last-customer-data-row {
+                        margin-top: 1.5rem;
+                        display: flex;
+                        width: 100%;
+    
+                        .data-wrapper{
+                            margin-right: 2rem;
+    
+                            .sub-header {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+    
+                ion-button {
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+    
+                #search-wrapper {
+                    margin: 1rem 0;
+                }
+    
+                #selected-customer-card {
+                    padding: 1rem;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    margin: 1rem 0;
+    
+                    #header {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+    
+                    #company {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+    
+                    #cnpj {
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    
+                    #last-customer-data-row {
+                        margin-top: 1.5rem;
+                        display: flex;
+                        width: 100%;
+    
+                        .data-wrapper{
+                            margin-right: 2rem;
+    
+                            .sub-header {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+    
+                ion-button {
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1921px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+    
+                #search-wrapper {
+                    margin: 1rem 0;
+                }
+    
+                #selected-customer-card {
+                    padding: 1rem;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    margin: 1rem 0;
+    
+                    #header {
+                        font-size: .8rem;
+                        font-weight: 600;
+                        margin-bottom: .5rem;
+                    }
+    
+                    #company {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+    
+                    #cnpj {
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    
+                    #last-customer-data-row {
+                        margin-top: 1.5rem;
+                        display: flex;
+                        width: 100%;
+    
+                        .data-wrapper{
+                            margin-right: 2rem;
+    
+                            .sub-header {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+    
+                ion-button {
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }    
 }
