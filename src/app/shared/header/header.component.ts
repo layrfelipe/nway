@@ -1,6 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnDestroy, signal } from '@angular/core';
 import { Event, Router } from '@angular/router';
+import { MenuService } from 'src/app/services/menu,service';
 
 @Component({
   selector: 'app-header',
@@ -12,11 +13,11 @@ export class HeaderComponent implements OnDestroy {
   private routerSubscription;
   protected pageTitle = signal<string>(this.router.url)
   protected showBackButton = signal<boolean>(true)
-  protected expandMobileMenu = signal<boolean>(false)
 
   constructor(
     private router: Router,
-    private location: Location
+    private location: Location,
+    protected menuService: MenuService
   ) {
     this.routerSubscription = this.router.events.subscribe((ev: Event) => {
       this.showBackButton.set(true)
@@ -87,11 +88,18 @@ export class HeaderComponent implements OnDestroy {
   }
 
   goToHomePage() {
+    if (this.menuService.isOpen()) {
+      this.menuService.closeMenu()
+    }
     this.router.navigate(['inicio'])
   }
 
   toggleExpandMobileMenuState() {
-    this.expandMobileMenu.update((value: boolean) => !value)
+    if (this.menuService.isOpen()) {
+      this.menuService.closeMenu()
+      return
+    }
+    this.menuService.openMenu()
   }
     
   ngOnDestroy() {
