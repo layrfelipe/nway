@@ -9,7 +9,7 @@
         <div id="main-content-wrapper">
             <div id="requests-buttons-actions">
                 <ion-button color="success" (click)="goToRequestMigrationPage()">SOLICITAR MIGRAÇÃO</ion-button>
-                <ion-button color="success" (click)="goToRequestCancellationPage()" fill="outline">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
+                <ion-button class="ion-text-wrap" color="success" (click)="goToRequestCancellationPage()" fill="outline">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
             </div>
 
             <div id="my-requests-table-wrapper">
@@ -24,9 +24,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Nome da empresa</th>
-                            <th>Data da solicitação</th>
-                            <th>Tipo de solicitação</th>
+                            <th>Empresa</th>
+                            <th>Solicitação</th>
+                            <th>Tipo</th>
                             <th>Status</th>
                             <th></th>
                         </tr>
@@ -37,7 +37,11 @@
                             <td>SunWave Energy Solutions</td>
                             <td>20/05/2024</td>
                             <td>Suspensão</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Aguardando resposta</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Aguardando resposta</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -45,7 +49,11 @@
                             <td>DigitalHealth Tech</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -53,7 +61,11 @@
                             <td>MediaTech Solutions</td>
                             <td>20/05/2024</td>
                             <td>Suspensão</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">Negada</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">Negada</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -61,7 +73,11 @@
                             <td>TechFood Delivery</td>
                             <td>20/05/2024</td>
                             <td>Migração</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -69,7 +85,11 @@
                             <td>CleanTech Innovations</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -77,7 +97,11 @@
                             <td>EduTech Academy</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -85,7 +109,11 @@
                             <td>AgriTech Farming Solutions</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -93,7 +121,11 @@
                             <td>FinTech Express</td>
                             <td>20/05/2024</td>
                             <td>Migração</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
+                            } @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -101,7 +133,12 @@
                             <td>EchoTech Solutions</td>
                             <td>20/05/2024</td>
                             <td>Migração</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
+                            }
+                            @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
 
@@ -109,7 +146,12 @@
                             <td>BioTech Solutions</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
-                            <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">Negada</ion-button></td>
+                            @if(!isPhone()) {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">Negada</ion-button></td>
+                            }
+                            @else {
+                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
+                            }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                         </tr>
                     </tbody>

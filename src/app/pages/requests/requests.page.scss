@@ -28,6 +28,7 @@
 
                     :last-child {
                         margin-top: 1rem;
+                        text-align: left;
                     }
                 }
     
@@ -89,6 +90,13 @@
                                         vertical-align: middle;
                                     }
                                 }
+
+                                td:nth-child(1) {
+                                    width: 25%;
+                                }
+                                td:nth-child(3) {
+                                    width: 25%;
+                                }
                             }
                         }
                     }
@@ -142,6 +150,7 @@
 
                     :last-child {
                         margin-top: 1rem;
+                        text-align: left;
                     }
                 }
     
@@ -176,7 +185,7 @@
                         thead {
                             color: #9f9f9f;
                             font-weight: 400;
-                            font-size: .8rem;
+                            font-size: .75rem;
     
                             th {
                                 padding-bottom: .5rem;
@@ -185,7 +194,7 @@
     
                         tbody {
                             color: black;
-                            font-size: .8rem;
+                            font-size: .75rem;
                             
                             .table-custom-row {
                                 border-top: 1px solid #b7b7b7;
@@ -196,13 +205,16 @@
                                     padding: .75rem 0;
                                     
                                     .custom-status-btn {
-                                        font-size: .9rem;
+                                        font-size: .6rem;
                                     }
     
                                     ion-icon {
                                         vertical-align: middle;
-                                        cursor: pointer;
                                     }
+                                }
+
+                                td:nth-child(1) {
+                                    width: 25%;
                                 }
                             }
                         }
@@ -217,14 +229,14 @@
     
                         #count-span {
                             color: #92949C;
-                            font-size: .9rem;
+                            font-size: .8rem;
                             display: inline-block;
                         }
                     }
                 }
             }
         }
-    }    
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -257,6 +269,7 @@
 
                     :last-child {
                         margin-top: 1rem;
+                        text-align: left;
                     }
                 }
     
@@ -291,7 +304,7 @@
                         thead {
                             color: #9f9f9f;
                             font-weight: 400;
-                            font-size: .8rem;
+                            font-size: .75rem;
     
                             th {
                                 padding-bottom: .5rem;
@@ -300,7 +313,7 @@
     
                         tbody {
                             color: black;
-                            font-size: .8rem;
+                            font-size: .75rem;
                             
                             .table-custom-row {
                                 border-top: 1px solid #b7b7b7;
@@ -311,13 +324,16 @@
                                     padding: .75rem 0;
                                     
                                     .custom-status-btn {
-                                        font-size: .9rem;
+                                        font-size: .6rem;
                                     }
     
                                     ion-icon {
                                         vertical-align: middle;
-                                        cursor: pointer;
                                     }
+                                }
+
+                                td:nth-child(1) {
+                                    width: 25%;
                                 }
                             }
                         }
@@ -332,14 +348,14 @@
     
                         #count-span {
                             color: #92949C;
-                            font-size: .9rem;
+                            font-size: .8rem;
                             display: inline-block;
                         }
                     }
                 }
             }
         }
-    }        
+    }      
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -394,7 +410,7 @@
     
                     table {
                         width: 100%;
-                        text-align: center;
+                        text-align: left;
     
                         thead {
                             color: #9f9f9f;
@@ -495,7 +511,7 @@
     
                     table {
                         width: 100%;
-                        text-align: center;
+                        text-align: left;
     
                         thead {
                             color: #9f9f9f;
@@ -596,7 +612,7 @@
     
                     table {
                         width: 100%;
-                        text-align: center;
+                        text-align: left;
     
                         thead {
                             color: #9f9f9f;
@@ -697,7 +713,7 @@
     
                     table {
                         width: 100%;
-                        text-align: center;
+                        text-align: left;
     
                         thead {
                             color: #9f9f9f;
