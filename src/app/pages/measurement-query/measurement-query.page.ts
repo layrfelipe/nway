@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,11 @@ import { Router } from '@angular/router';
 })
 export class MeasurementQueryPage {
 
+  protected screenWidth = signal<number>(0)
+  protected isMobile = computed(() => {
+    return this.screenWidth() < 993
+  })
+  
   constructor(
     private router: Router
   ) {}
@@ -15,4 +20,5 @@ export class MeasurementQueryPage {
   goToMeasurementQueryCustomerPage() {
     this.router.navigate(['consulta-de-medicao', 'cliente'])    
   }
+
 }
