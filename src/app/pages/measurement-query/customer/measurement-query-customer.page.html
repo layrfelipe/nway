@@ -33,8 +33,10 @@
                             <th>Período</th>
                             <th>Valor</th>
                             <th>Status</th>
-                            <th>Consumo do mês</th>
-                            <th></th>
+                            <th>Consumo</th>
+                            @if(!isPhone()) {
+                                <th></th>
+                            }
                             <th></th>
                         </tr>
                     </thead>
@@ -43,33 +45,53 @@
                         <tr class="table-custom-row">
                             <td>Março</td>
                             <td>R$3.941,32</td>
-                            <td>
-                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                            </td>
+                            @if(!isPhone()) {
+                                <td>
+                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                                </td>
+                            } @else {
+                                <ion-button color="danger" size="small"></ion-button>
+                            }
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo</td>
+                            @if(!isPhone()) {
+                                <td>
+                                    Relatório de consumo
+                                </td>
+                            }
                             <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
-                            <td>Fevereiro</td>
+                            <td>Março</td>
                             <td>R$3.941,32</td>
-                            <td>
-                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                            </td>
+                            @if(!isPhone()) {
+                                <td>
+                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                                </td>
+                            } @else {
+                                <ion-button color="danger" size="small"></ion-button>
+                            }
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo</td>
+                            @if(!isPhone()) {
+                                <td>Relatório de consumo</td>
+                            }
                             <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
 
                         <tr class="table-custom-row">
-                            <td>Janeiro</td>
+                            <td>Março</td>
                             <td>R$3.941,32</td>
-                            <td>
-                                <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                            </td>
+                            @if(!isPhone()) {
+                                <td>
+                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
+                                </td>
+                            } @else {
+                                <ion-button color="danger" size="small"></ion-button>
+                            }
                             <td>100.000 kWh</td>
-                            <td>Relatório de consumo</td>
+                            @if(!isPhone()) {
+                                <td>Relatório de consumo</td>
+                            }
                             <td><ion-icon name="chevron-forward-outline" color="medium" size="large"></ion-icon></td>
                         </tr>
                     </tbody>
@@ -87,7 +109,7 @@
                 </ion-text>
             </div>
 
-            <ion-button color="success" fill="outline" id="cancel-energy-supply-btn">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
+            <ion-button class="ion-text-wrap" color="success" fill="outline" id="cancel-energy-supply-btn">SOLICITAR SUSPENSÃO DE FORNECIMENTO</ion-button>
         </div>
     </div>
 </main>
