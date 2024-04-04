@@ -1,0 +1,20 @@
+[
+    {
+        "company": "SunWave Energy Solutions",
+        "registerDate": "20/05/2024",
+        "plan": "Basic",
+        "status": "active",
+        "cancelDate": "",
+        "profileCode": 110,
+        "updatedAt": "2024-03-28T00:24:56-03:00",
+        "contractValidityStartDate": "2024-03-28T00:24:56-03:00",
+        "documentNumber": "1157227783",
+        "connectedType": "DISTRIBUIDORA_SUPRIDORA",
+        "connectedCode": 117,
+        "consumerUnitCode": 112,
+        "consumerUnidStatus": "active",
+        "id": "f01fd91f-6f0b-4a2f-ac5c-2d356059aeab",
+        "documentType": "CPF",
+        "retailerCode": "200012"
+    }
+]

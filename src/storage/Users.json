@@ -1,0 +1,14 @@
+[
+    {
+        "username": "chain-energy",
+        "password": "1234",
+        "name": "ChainEnergy",
+        "totalRevenue": 200000,
+        "generatedEnergy": 920000,
+        "newCustomers": 542,
+        "totalDefaultAmount": 2000000,
+        "newLeads": 15542,
+        "clientId": "",
+        "clientSecret": ""
+    }
+]

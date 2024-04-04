@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Manutenção do sistema",
+        "type": "warn",
+        "datetime": "06/04 15:40",
+        "content": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "title": "Migração concluída",
+        "type": "success",
+        "datetime": "06/04 15:06",
+        "content": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "title": "Troca de fornecedor",
+        "type": "success",
+        "datetime": "05/04 13:00",
+        "content": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "title": "Manutenção do sistema",
+        "type": "warn",
+        "datetime": "05/04 11:57",
+        "content": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "title": "Manutenção do sistema",
+        "type": "warn",
+        "datetime": "04/04 19:28",
+        "content": "Lorem ipsum dolor sit amet"
+    }
+]
