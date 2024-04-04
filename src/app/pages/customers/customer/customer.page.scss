@@ -1,68 +1,499 @@
-main {
-    width: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: white;
-
-    #main-page-wrapper {
+@media(max-width: 576px) {
+    main {
         width: 100%;
+        overflow-y: auto;
         display: flex;
-
-        #menu-wrapper {
-            width: 15%;
-        }
-
-        #main-content-wrapper {
-            width: 85%;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            padding: 2rem;
-
-            #customer-wrapper {
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
                 width: 100%;
-                border: 1px solid #b7b7b7;
-                border-radius: 1rem;
-                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-
-                h5 {
-                    font-weight: 700;
-                    font-size: 1.5rem;
-                }
-                
-                span {
-                    font-size: .9rem;
-                    font-weight: 700;
-                    margin-bottom: 1rem;
-                }
-
-                #customer-data-columns-wrapper {
-                    margin-top: 2rem;
-                    min-width: 70%;
-                    max-width: 90%;
-
+                padding: 2rem .5rem;  
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
                     h5 {
-                        font-size: .9rem;
-                        text-align: left;
+                        font-weight: 700;
+                        font-size: 1.5rem;
                     }
                     
-                    h3 {
-                        font-size: 1.25rem;
-                        text-align: left;
-                    }
-
-                    #customer-status {
+                    span {
+                        font-size: .9rem;
                         font-weight: 700;
-                    }
-
-                    ion-row {
                         margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
                     }
                 }
             }
         }
-    }
+    }    
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;  
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;  
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }       
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1.25rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1.25rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1.25rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1921px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #customer-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    h5 {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: .9rem;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+    
+                    #customer-data-columns-wrapper {
+                        margin-top: 2rem;
+                        min-width: 70%;
+                        max-width: 90%;
+    
+                        h5 {
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                        
+                        h3 {
+                            font-size: 1.25rem;
+                            text-align: left;
+                        }
+    
+                        #customer-status {
+                            font-weight: 700;
+                        }
+    
+                        ion-row {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
