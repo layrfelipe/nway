@@ -1,100 +1,729 @@
-main {
-    width: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: white;
-
-    #main-page-wrapper {
+@media(max-width: 576px) {
+    main {
         width: 100%;
+        overflow-y: auto;
         display: flex;
-
-        #menu-wrapper {
-            width: 15%;
-        }
-
-        #main-content-wrapper {
-            width: 85%;
-            display: flex;
-            flex-direction: column;
-            padding: 2rem;
-
-            #my-logs-wrapper {
-                width: 100%;
-                border: 1px solid #b7b7b7;
-                border-radius: 1rem;
-                padding: 1rem;
-
-                #content-header {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    
-                    h2 {
-                        margin-bottom: 1rem;
-                    }
-
-                    ion-icon {
-                        cursor: pointer;
-                    }
-                }
-
-                .custom-log-item-row {
-                    margin: .75rem 0;
-                    display: flex;
-                    width: 100%;
-                    justify-content: flex-start;
-
-                    .left-side-log-row {
-                        display: flex;
-                        align-items: center;
-                        width: 90%;
-                        margin-left: 1rem;
-                        
-                        .log-text-wrapper {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
+        flex-direction: column;
+        background: white;
     
-                            h3 {
-                                font-size: 1rem;
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    margin-top: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                            font-size: 1.25rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
                             }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
     
                             h6 {
                                 font-size: .8rem;
                                 margin-top: .5rem;
-                                cursor: pointer;
                             }
                         }
                     }
-
-                    .right-side-log-row {
+    
+                    #table-footer {
+                        width: 100%;
                         display: flex;
-                        align-items: flex-start;
-                        justify-content: flex-end;
-                        width: 10%;
-
-                        h6 {
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
                             font-size: .8rem;
-                            margin-top: .5rem;
+                            display: inline-block;
                         }
-                    }
-                }
-
-                #table-footer {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 1.5rem;
-
-                    #count-span {
-                        color: #92949C;
-                        font-size: .8rem;
-                        display: inline-block;
                     }
                 }
             }
         }
-    }
+    }  
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    margin-top: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                            font-size: 1.25rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                display: none;
+                visibility: hidden;
+            }
+    
+            #main-content-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem .5rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    margin-top: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                            font-size: 1.25rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }       
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 1921px) {
+    main {
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    
+        #main-page-wrapper {
+            width: 100%;
+            display: flex;
+    
+            #menu-wrapper {
+                width: 15%;
+            }
+    
+            #main-content-wrapper {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+    
+                #my-logs-wrapper {
+                    width: 100%;
+                    border: 1px solid #b7b7b7;
+                    border-radius: 1rem;
+                    padding: 1rem;
+    
+                    #content-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        
+                        h2 {
+                            margin-bottom: 1rem;
+                        }
+    
+                        ion-icon {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .custom-log-item-row {
+                        margin: .75rem 0;
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+    
+                        .left-side-log-row {
+                            display: flex;
+                            align-items: center;
+                            width: 90%;
+                            margin-left: 1rem;
+                            
+                            .log-text-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                h3 {
+                                    font-size: 1rem;
+                                }
+        
+                                h6 {
+                                    font-size: .8rem;
+                                    margin-top: .5rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+    
+                        .right-side-log-row {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            width: 10%;
+    
+                            h6 {
+                                font-size: .8rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+    
+                    #table-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5rem;
+    
+                        #count-span {
+                            color: #92949C;
+                            font-size: .8rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
