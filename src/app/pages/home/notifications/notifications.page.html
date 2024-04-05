@@ -17,126 +17,36 @@
                 </div>
 
                 <ion-list>
-                    <ion-item>
-                        <div class="custom-notification-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-notification-row">
-                                <div class="notification-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-                                    </ion-text>
-                                    <ion-text color="medium">
-                                        <ion-text color="medium">
-                                            <h6>Ver mais</h6>
+                    @for(notification of notifications; track notification.id) {
+                        <ion-item>
+                            <div class="custom-notification-item-row">
+                                <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
+    
+                                <div class="left-side-notification-row">
+                                    <div class="notification-text-wrapper">
+                                        <ion-text color="dark">
+                                            <h3>{{notification?.content}}</h3>
                                         </ion-text>
-                                    </ion-text>
+                                        <ion-text color="medium">
+                                            <ion-text color="medium">
+                                                <h6>Ver mais</h6>
+                                            </ion-text>
+                                        </ion-text>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="right-side-notification-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:29</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
-
-                    <ion-item>
-                        <div class="custom-notification-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-notification-row">
-                                <div class="notification-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                                    </ion-text>
+                                
+                                <div class="right-side-notification-row">
                                     <ion-text color="medium">
-                                        <h6>Ver menos</h6>
+                                        <h6>{{notification?.datetime}}</h6>
                                     </ion-text>
                                 </div>
                             </div>
-                            
-                            <div class="right-side-notification-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:28</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
-
-                    <ion-item>
-                        <div class="custom-notification-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-notification-row">
-                                <div class="notification-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    </ion-text>
-                                    <ion-text color="medium">
-                                        <h6>Ver mais</h6>
-                                    </ion-text>
-                                </div>
-                            </div>
-                            
-                            <div class="right-side-notification-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:27</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
-
-                    <ion-item>
-                        <div class="custom-notification-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-notification-row">
-                                <div class="notification-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    </ion-text>
-                                    <ion-text color="medium">
-                                        <h6>Ver mais</h6>
-                                    </ion-text>
-                                </div>
-                            </div>
-                            
-                            <div class="right-side-notification-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:26</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
-
-                    <ion-item>
-                        <div class="custom-notification-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-notification-row">
-                                <div class="notification-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    </ion-text>
-                                    <ion-text color="medium">
-                                        <h6>Ver mais</h6>
-                                    </ion-text>
-                                </div>
-                            </div>
-                            
-                            <div class="right-side-notification-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:25</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
+                        </ion-item>
+                    }
                 </ion-list>
 
                 <div id="table-footer">
-                    <span id="count-span">Mostrando 5 de 690</span>
+                    <span id="count-span">Mostrando {{notifications?.length}} de 690</span>
                     <ion-button fill="clear" color="primary" size="small">Ver mais</ion-button>
                 </div>
             </div>

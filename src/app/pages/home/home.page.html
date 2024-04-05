@@ -16,7 +16,7 @@
                     </ion-text>
                     <ion-text color="success" class="indicator-value">
                         <h3>
-                            R$200.000.000
+                            {{user?.totalRevenue | currency: 'BRL'}}
                         </h3>
                     </ion-text>
                 </div>
@@ -29,7 +29,7 @@
                     </ion-text>
                     <ion-text color="success" class="indicator-value">
                         <h3>
-                            920.000 kWh
+                            {{user?.generatedEnergy}} kWh
                         </h3>
                     </ion-text>
                 </div>
@@ -42,7 +42,7 @@
                     </ion-text>
                     <ion-text color="success" class="indicator-value">
                         <h3>
-                            542
+                            {{user?.newCustomers}}
                         </h3>
                     </ion-text>
                 </div>
@@ -55,7 +55,7 @@
                     </ion-text>
                     <ion-text color="danger" class="indicator-value">
                         <h3>
-                            R$2.000.000
+                            {{user?.totalDefaultAmount | currency: 'BRL'}}
                         </h3>
                     </ion-text>
                 </div>
@@ -68,7 +68,7 @@
                     </ion-text>
                     <ion-text color="success" class="indicator-value">
                         <h3>
-                            15.542
+                            {{user?.newLeads}}
                         </h3>
                     </ion-text>
                 </div>
@@ -83,7 +83,21 @@
 
                     <div class="status-content">
                         <ion-list class="status-custom-list">
-                            <ion-item class="status-custom-item">
+                            @for (notification of notifications; track notification.id) {
+                                <ion-item class="status-custom-item">
+                                    <div class="item">
+                                        <div class="notification-data">
+                                            <ion-icon name="alert-circle" color="warning"></ion-icon>
+                                            <ion-text class="custom-text">{{ notification?.title }}</ion-text>
+                                        </div>
+                                        <div class="notification-log-datetime">
+                                            <ion-text color="medium">{{ notification?.datetime }}</ion-text>
+                                        </div>
+                                    </div>
+                                </ion-item>
+                            }
+
+                            <!-- <ion-item class="status-custom-item">
                                 <div class="item">
                                     <div class="notification-data">
                                         <ion-icon name="alert-circle" color="warning"></ion-icon>
@@ -117,7 +131,7 @@
                                         <ion-text color="medium">11/05 06:00</ion-text>
                                     </div>
                                 </div>
-                            </ion-item>
+                            </ion-item> -->
                         </ion-list>
 
                         <ion-button (click)="goToNotificationsPage()" color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>

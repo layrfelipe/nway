@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
+
+  protected user: any;
+  protected notifications: any;
+  protected requests: any;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private storage: StorageService
   ) {}
 
   goToRequestsPage() {
@@ -18,5 +24,25 @@ export class HomePage {
 
   goToNotificationsPage() {
     this.router.navigate(['inicio', 'notificacoes'])
+  }
+
+  ngOnInit() {
+    this.storage.getUsersMockData().subscribe((users) => {
+      if (users) {
+        this.user = users[0];
+      }
+    })
+
+    this.storage.getNotificationsMockData().subscribe((notifications) => {
+      if (notifications) {
+        this.notifications = notifications.slice(0, 3);
+      }
+    })
+
+    this.storage.getRequestsMockData().subscribe((requests) => {
+      if (requests) {
+        this.requests = requests.slice(0, 3)
+      }
+    })
   }
 }
