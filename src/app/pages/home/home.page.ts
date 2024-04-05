@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { StorageService } from 'src/app/services/storage.service';
 
@@ -12,6 +12,12 @@ export class HomePage implements OnInit {
   protected user: any;
   protected notifications: any;
   protected requests: any;
+
+  protected screenWidth = signal<number>(0)
+
+  protected isPhone = computed(() => {
+    return this.screenWidth() < 768
+  })
 
   constructor(
     private router: Router,
@@ -27,6 +33,8 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit() {
+    this.screenWidth.set(window.innerWidth)
+    
     this.storage.getUsersMockData().subscribe((users) => {
       if (users) {
         this.user = users[0];

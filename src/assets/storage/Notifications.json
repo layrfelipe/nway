@@ -4,69 +4,79 @@
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "06/04 15:40",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "status": "not-seen"
     },
     {
         "id": 2,
         "title": "Migração concluída",
         "type": "success",
         "datetime": "06/04 15:06",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "not-seen"
     },
     {
         "id": 3,
         "title": "Troca de fornecedor",
         "type": "success",
         "datetime": "05/04 13:00",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     },
     {
         "id": 4,
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "05/04 11:57",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "status": "seen"
     },
     {
         "id": 5,
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "04/04 19:28",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     }, 
     {
         "id": 6,
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "03/04 12:47",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "status": "seen"
     },
     {
         "id": 7,
         "title": "Migração concluída",
         "type": "success",
         "datetime": "03/04 12:12",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     },
     {
         "id": 8,
         "title": "Troca de fornecedor",
         "type": "success",
         "datetime": "03/04 07:09",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     },
     {
         "id": 9,
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "03/04 06:54",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     },
     {
         "id": 10,
         "title": "Manutenção do sistema",
         "type": "warn",
         "datetime": "02/04 08:37",
-        "content": "Lorem ipsum dolor sit amet"
+        "content": "Lorem ipsum dolor sit amet",
+        "status": "seen"
     }
 ]

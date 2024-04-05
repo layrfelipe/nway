@@ -87,8 +87,26 @@
                                 <ion-item class="status-custom-item">
                                     <div class="item">
                                         <div class="notification-data">
-                                            <ion-icon name="alert-circle" color="warning"></ion-icon>
-                                            <ion-text class="custom-text">{{ notification?.title }}</ion-text>
+                                            @if(notification.status == 'not-seen' && notification.type == 'warn') {
+                                                <ion-icon name="alert-circle" color="warning"></ion-icon>
+                                            }
+
+                                            @if(notification.status == 'not-seen' && notification.type == 'success') {
+                                                <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                                            }
+
+                                            @if(notification.status == 'seen' && notification.type=='success'){
+                                                <ion-icon name="checkmark-circle" color="medium"></ion-icon>
+                                            }
+
+                                            @if(notification.status == 'not-seen') {
+                                                <ion-text class="custom-text">{{ notification?.title }}</ion-text>
+                                            }
+
+                                            @if(notification.status == 'seen') {
+                                                <ion-text class="custom-text" color="medium">{{ notification?.title }}</ion-text>
+                                            }
+
                                         </div>
                                         <div class="notification-log-datetime">
                                             <ion-text color="medium">{{ notification?.datetime }}</ion-text>
@@ -141,12 +159,44 @@
                 <div class="status-wrapper">
                     <div class="status-header">
                         <ion-text class="status-header-custom-text">Solicitações em andamento</ion-text>
-                        <ion-button size="small" color="dark">2 novas</ion-button>
                     </div>
 
                     <div class="status-content">
                         <ion-list class="status-custom-list">
-                            <ion-item class="status-custom-item">
+                            @for(request of requests; track request.id) {
+                                <ion-item class="status-custom-item">
+                                    <div class="item">
+                                        <ion-text>{{request.company}}</ion-text>
+                                        @if (isPhone()) {
+                                            @if(request.status == 'success') {
+                                                <ion-button color="success"></ion-button>
+                                            }
+    
+                                            @if(request.status == 'waiting') {
+                                                <ion-button color="warning"></ion-button>
+                                            }
+    
+                                            @if(request.status == 'failure') {
+                                                <ion-button color="danger"></ion-button>
+                                            }
+
+                                        } @else {
+                                            @if(request.status == 'success') {
+                                                <ion-button color="success">{{request.statusText}}</ion-button>
+                                            }
+    
+                                            @if(request.status == 'waiting') {
+                                                <ion-button color="warning">{{request.statusText}}</ion-button>
+                                            }
+    
+                                            @if(request.status == 'failure') {
+                                                <ion-button color="danger">{{request.statusText}}</ion-button>
+                                            }
+                                        }
+                                    </div>
+                                </ion-item>
+                            }
+                        <!-- <ion-item class="status-custom-item">
                                 <div class="item">
                                     <ion-text>SunWave Energy Solutions</ion-text>
                                     <ion-button color="success">Migração aprovada</ion-button>
@@ -158,14 +208,7 @@
                                     <ion-text>SunWave Energy Solutions</ion-text>
                                     <ion-button color="success">Migração aprovada</ion-button>
                                 </div>
-                            </ion-item>
-
-                            <ion-item class="status-custom-item">
-                                <div class="item">
-                                    <ion-text>SunWave Energy Solutions</ion-text>
-                                    <ion-button color="success">Migração aprovada</ion-button>
-                                </div>
-                            </ion-item>
+                            </ion-item> -->
                         </ion-list>
 
                         <ion-button (click)="goToRequestsPage()" color="success" fill="outline" size="small" id="show-all-notifications-button">Ver todas</ion-button>
