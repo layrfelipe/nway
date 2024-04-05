@@ -1,3 +1,7 @@
+ion-input {
+    --color: black;
+}
+
 @media(max-width: 576px) {
     main {
         width: 100%;
@@ -65,9 +69,7 @@
                         .data-wrapper{
                             margin-top: 1rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -161,9 +163,7 @@
                         .data-wrapper{
                             margin-top: 1rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -257,9 +257,7 @@
                         .data-wrapper{
                             margin-top: 1rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -352,9 +350,7 @@
                         .data-wrapper{
                             margin-right: 2rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -446,9 +442,7 @@
                         .data-wrapper{
                             margin-right: 2rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -540,9 +534,7 @@
                         .data-wrapper{
                             margin-right: 2rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }
@@ -634,9 +626,7 @@
                         .data-wrapper{
                             margin-right: 2rem;
     
-                            .sub-header {
-                                font-weight: 700;
-                            }
+                            
                         }
                     }
                 }

@@ -1,3 +1,7 @@
+ion-input {
+    --color: black;
+}
+
 @media(max-width: 576px) {
     main {
         width: 100%;
@@ -31,8 +35,6 @@
     
                 #search-wrapper {
                     margin: 1rem 0;
-                    
-                    
                 }
     
                 #selected-customer-card {
