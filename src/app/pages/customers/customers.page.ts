@@ -30,7 +30,6 @@ export class CustomersPage implements OnInit {
     
     this.storage.getCustomersMockData().subscribe((customers) => {
       if (customers) {
-        console.log(customers)
         this.customers = customers;
       }
     })

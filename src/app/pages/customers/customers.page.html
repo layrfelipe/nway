@@ -32,7 +32,7 @@
                     </thead>
     
                     <tbody>
-                        <!-- @for(customer of customers; track customer.id) {
+                        @for(customer of customers; track customer.id) {
                             @if(customer?.status == 'active') {
                                 <tr class="table-custom-row">
                                     <td>{{customer.company}}</td>
@@ -46,96 +46,12 @@
                                     <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                                 </tr>
                             }
-                        } -->
-
-                        <tr class="table-custom-row">
-                            <td>SunWave Energy Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>DigitalHealth Tech</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>MediaTech Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="warning" size="small">Em manutenção</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="warning" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>TechFood Delivery</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>CleanTech Innovations</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>EduTech Academy</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if (!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>AgriTech Farming Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Basic</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="success" size="small">Ativa</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
+                        }
                     </tbody>
                 </table>
 
                 <div class="table-footer">
-                    <span id="count-span">Mostrando 7 de 7</span>
+                    <span id="count-span">Mostrando 4 de 4</span>
                 </div>
             </div>
 
@@ -156,13 +72,13 @@
                             <th>Status</th>
                         </tr>
                     </thead>
-    
+
                     <tbody>
-                        <!-- @for(customer of customers; track customer.id) {
-                            @if(customer.status != 'active') {
+                        @for(customer of customers; track customer.id) {
+                            @if(customer.status == 'inactive') {
                                 <tr class="table-custom-row">
                                     <td>{{customer.company}}</td>
-                                    <td>{{customer.date}}</td>
+                                    <td>{{customer.cancelDate}}</td>
                                     @if(!isPhone()) {
                                         <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
                                     } @else {
@@ -171,40 +87,7 @@
                                     <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                                 </tr>
                             }
-                        } -->
-                        
-                        <tr class="table-custom-row">
-                            <td>FinTech Express</td>
-                            <td>20/05/2024</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>BioTech Innovations</td>
-                            <td>20/05/2024</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>RoboTech Systems</td>
-                            <td>20/05/2024</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small">Inativo</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" color="medium" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
-                        </tr>
+                        }
                     </tbody>
                 </table>
 
