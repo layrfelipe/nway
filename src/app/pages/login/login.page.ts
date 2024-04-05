@@ -33,16 +33,18 @@ export class LoginPage {
       return
     }
     
-    this.authService.authenticate({ user: this.userInput(), password: this.passwordInput() }).subscribe({
-      next: (response: any) => {
-        this.authService.setAccessToken(response.access_token)
-        this.router.navigate(['/inicio'])
-      },
-      error: (e: any) => {
-        console.log("Login error", e)
-        this.authService.clearAccessToken()
-      }
-    })
+    this.router.navigate(['/inicio'])
+    
+    // this.authService.authenticate({ user: this.userInput(), password: this.passwordInput() }).subscribe({
+    //   next: (response: any) => {
+    //     this.authService.setAccessToken(response.access_token)
+    //     this.router.navigate(['/inicio'])
+    //   },
+    //   error: (e: any) => {
+    //     console.log("Login error", e)
+    //     this.authService.clearAccessToken()
+    //   }
+    // })
   }
 
   mockData() {
