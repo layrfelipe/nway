@@ -30,7 +30,9 @@
                             <th>Nome da empresa</th>
                             <th>Situação financeira</th>
                             <th>Consumo último mês</th>
-                            <th></th>
+                            @if(!isPhone()) {
+                                <th></th>
+                            }
                             <th></th>
                         </tr>
                     </thead>
@@ -45,7 +47,9 @@
                                     <td><ion-label color="danger">{{measure.situation}}</ion-label></td>
                                 }
                                 <td>{{measure.consumptionHistory[0].march.consumptionMonth}} kWh</td>
-                                <td (click)="goToMeasurementQueryCustomerPage()" class="consumption-report-column">Relatório de consumo</td>
+                                @if(!isPhone()) {
+                                    <td (click)="goToMeasurementQueryCustomerPage()" class="consumption-report-column">Relatório de consumo</td>
+                                }
                                 <td><ion-icon (click)="goToMeasurementQueryCustomerPage()" name="chevron-forward-outline" color="medium" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                             </tr>
                         }

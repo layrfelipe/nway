@@ -15,6 +15,10 @@ export class MeasurementQueryPage  implements OnInit {
   protected isMobile = computed(() => {
     return this.screenWidth() < 993
   })
+
+  protected isPhone = computed(() => {
+    return this.screenWidth() < 768
+  })
   
   constructor(
     private router: Router,
