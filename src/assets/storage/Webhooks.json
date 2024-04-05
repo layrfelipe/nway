@@ -1,17 +1,21 @@
 [
     {
+        "id": 1,
         "trigger": "Troca de representante aceita",
         "url": "http://endereco-test...1287308"
     },
     {
+        "id": 2,
         "trigger": "Troca de representante recusada",
         "url": "http://endereco-test...1287308"
     },
     {
+        "id": 3,
         "trigger": "Migração aceita",
         "url": "http://endereco-test...1287308"
     },
     {
+        "id": 4,
         "trigger": "Migração recusada",
         "url": "http://endereco-test...1287308"
     }

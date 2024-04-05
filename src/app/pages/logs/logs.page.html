@@ -17,30 +17,32 @@
                 </div>
 
                 <ion-list>
-                    <ion-item>
-                        <div class="custom-log-item-row">
-                            <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
-
-                            <div class="left-side-log-row">
-                                <div class="log-text-wrapper">
-                                    <ion-text color="dark">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-                                    </ion-text>
-                                    <ion-text color="dark">
-                                        <h6>Ver mais</h6>
+                    @for(log of logs; track log.id) {
+                        <ion-item>
+                            <div class="custom-log-item-row">
+                                <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
+    
+                                <div class="left-side-log-row">
+                                    <div class="log-text-wrapper">
+                                        <ion-text color="dark">
+                                            <h3>{{log.content}}</h3>
+                                        </ion-text>
+                                        <ion-text color="dark">
+                                            <h6>Ver mais</h6>
+                                        </ion-text>
+                                    </div>
+                                </div>
+                                
+                                <div class="right-side-log-row">
+                                    <ion-text color="medium">
+                                        <h6>{{log.datetime}}</h6>
                                     </ion-text>
                                 </div>
                             </div>
-                            
-                            <div class="right-side-log-row">
-                                <ion-text color="medium">
-                                    <h6>12/05 14:30</h6>
-                                </ion-text>
-                            </div>
-                        </div>
-                    </ion-item>
+                        </ion-item>
+                    }
 
-                    <ion-item>
+                    <!-- <ion-item>
                         <div class="custom-log-item-row">
                             <ion-icon name="alert-circle" color="warning" size="large"></ion-icon>
 
@@ -114,11 +116,11 @@
                                 </ion-text>
                             </div>
                         </div>
-                    </ion-item>
+                    </ion-item> -->
                 </ion-list>
 
                 <div id="table-footer">
-                    <span id="count-span">Mostrando 5 de 690</span>
+                    <span id="count-span">Mostrando {{logs?.length}} de 690</span>
                     <ion-button fill="clear" color="primary" size="small">Ver mais</ion-button>
                 </div>
             </div>

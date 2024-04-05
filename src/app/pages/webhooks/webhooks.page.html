@@ -31,14 +31,16 @@
                     </thead>
     
                     <tbody>
-                        <tr class="table-custom-row">
-                            <td>Troca de representante aceita</td>
-                            <td>http://endereco-test...1287308</td>
-                            <td class="forward-icon"><ion-icon name="trash-outline" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                            <td class="forward-icon"><ion-icon name="chevron-forward" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
+                        @for(hook of webhooks; track hook.id){
+                            <tr class="table-custom-row">
+                                <td>{{hook.trigger}}</td>
+                                <td>{{hook.url}}</td>
+                                <td class="forward-icon"><ion-icon name="trash-outline" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
+                                <td class="forward-icon"><ion-icon name="chevron-forward" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
+                            </tr>
+                        }
 
-                        <tr class="table-custom-row">
+                        <!-- <tr class="table-custom-row">
                             <td>Troca de representante rejeitada</td>
                             <td>http://endereco-test...1287308</td>
                             <td class="forward-icon"><ion-icon name="trash-outline" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
@@ -57,12 +59,12 @@
                             <td>http://endereco-test...1287308</td>
                             <td class="forward-icon"><ion-icon name="trash-outline" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                             <td class="forward-icon"><ion-icon name="chevron-forward" color="medium" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
 
                 <div id="table-footer">
-                    <span id="count-span">Mostrando 4 de 4</span>
+                    <span id="count-span">Mostrando {{webhooks?.length}} de 4</span>
                 </div>
             </div>
         </div>

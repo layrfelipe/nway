@@ -1,5 +1,6 @@
 import { Component, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-customers',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['customers.page.scss'],
 })
 export class CustomersPage implements OnInit {
+
+  protected customers: any;
 
   protected screenWidth = signal<number>(0)
   protected isMobile = computed(() => {
@@ -18,11 +21,19 @@ export class CustomersPage implements OnInit {
   })
 
   constructor(
-    private router: Router
+    private router: Router,
+    private storage: StorageService
   ) {}
 
   ngOnInit() {
     this.screenWidth.set(window.innerWidth);
+    
+    this.storage.getCustomersMockData().subscribe((customers) => {
+      if (customers) {
+        console.log(customers)
+        this.customers = customers;
+      }
+    })
   }
 
   goToCustomerDetailsPage() {

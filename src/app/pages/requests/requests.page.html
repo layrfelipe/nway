@@ -33,7 +33,22 @@
                     </thead>
 
                     <tbody>
-                        <tr class="table-custom-row">
+
+                        @for(request of requests; track request.id) {
+                            <tr class="table-custom-row">
+                                <td>{{request?.company}}</td>
+                                <td>{{request?.date}}</td>
+                                <td>{{request?.type}}</td>
+                                @if(!isPhone()) {
+                                    <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">{{request?.status}}</ion-button></td>
+                                } @else {
+                                    <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                                }
+                                <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
+                            </tr>
+                        }
+
+                        <!-- <tr class="table-custom-row">
                             <td>SunWave Energy Solutions</td>
                             <td>20/05/2024</td>
                             <td>Suspensão</td>
@@ -153,7 +168,7 @@
                                 <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
                             }
                             <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
 

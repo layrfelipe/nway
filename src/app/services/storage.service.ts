@@ -26,4 +26,20 @@ export class StorageService {
     getRequestsMockData() {
         return this.getJsonData("./assets/storage/Requests.json")
     }
+
+    getCustomersMockData() {
+        return this.getJsonData("./assets/storage/Customers.json")
+    }
+
+    getMeasurementQueriesMockData() {
+        return this.getJsonData("./assets/storage/MeasurementQueries.json")
+    }
+    
+    getWebhooksMockData() {
+        return this.getJsonData("./assets/storage/Webhooks.json")
+    }
+
+    getLogsMockData() {
+        return this.getJsonData("./assets/storage/Logs.json")
+    }
 }

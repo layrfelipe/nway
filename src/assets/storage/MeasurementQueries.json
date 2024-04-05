@@ -1,0 +1,71 @@
+[
+    {
+        "company": "SunWave Energy Solutions",
+        "situation": "última fatura paga",
+        "consumptionHistory": [
+            {
+                "march": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "february": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "january": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                }
+            }
+        ]
+    },
+    {
+        "company": "DigitalHealth Tech",
+        "situation": "última fatura paga",
+        "consumptionHistory": [
+            {
+                "march": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "february": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "january": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                }
+            }
+        ]
+    },
+    {
+        "company": "MediaTech Solutions",
+        "situation": "última fatura paga",
+        "consumptionHistory": [
+            {
+                "march": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "february": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                },
+                "january": {
+                    "value": 3941.32,
+                    "status": "aguardando pagamento",
+                    "consumptionMonth": 100000                    
+                }
+            }
+        ]
+    }
+]

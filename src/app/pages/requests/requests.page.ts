@@ -1,5 +1,6 @@
 import { Component, OnInit, computed, signal } from '@angular/core';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-requests',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['requests.page.scss'],
 })
 export class RequestsPage implements OnInit {
+
+  protected requests: any;
 
   protected screenWidth = signal<number>(0)
   protected isMobile = computed(() => {
@@ -18,11 +21,18 @@ export class RequestsPage implements OnInit {
   })
 
   constructor(
-    private router: Router
+    private router: Router,
+    private storage: StorageService
   ) {}
 
   ngOnInit() {
     this.screenWidth.set(window.innerWidth);
+
+    this.storage.getRequestsMockData().subscribe((requests) => {
+      if (requests) {
+        this.requests = requests;
+      }
+    })
   }
 
   goToRequestStatusPage() {
