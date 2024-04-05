@@ -12,8 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'status',
-    component: RequestStatusPage
+    path: 'status/:requestId',
+    component: RequestStatusPage,
   },
   {
     path: 'migracao',

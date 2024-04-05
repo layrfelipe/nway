@@ -35,8 +35,8 @@ export class RequestsPage implements OnInit {
     })
   }
 
-  goToRequestStatusPage() {
-    this.router.navigate(['solicitacoes', 'status'])
+  goToRequestStatusPage(requestId: any) {
+    this.router.navigate(['solicitacoes', 'status', requestId])
   }
   goToRequestMigrationPage() {
     this.router.navigate(['solicitacoes', 'migracao'])

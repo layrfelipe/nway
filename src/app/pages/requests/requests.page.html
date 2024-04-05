@@ -41,26 +41,26 @@
                                 <td>{{request?.type}}</td>
                                 @if(!isPhone()) {
                                     @if(request.status == 'success') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">{{request.statusText}}</ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="success" size="small">{{request.statusText}}</ion-button></td>
                                     }
                                     @if(request.status == 'waiting') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">{{request.statusText}}</ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="warning" size="small">{{request.statusText}}</ion-button></td>
                                     }
                                     @if(request.status == 'failure') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">{{request.statusText}}</ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="danger" size="small">{{request.statusText}}</ion-button></td>
                                     }
                                 } @else {
                                     @if(request.status == 'success') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="success" size="small"></ion-button></td>
                                     }
                                     @if(request.status == 'waiting') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="warning" size="small"></ion-button></td>
                                     }
                                     @if(request.status == 'failure') {
-                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage(request.id)" color="danger" size="small"></ion-button></td>
                                     }
                                 }
-                                <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
+                                <td><ion-icon (click)="goToRequestStatusPage(request.id)" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                             </tr>
                         }
 
