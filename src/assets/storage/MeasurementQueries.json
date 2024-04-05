@@ -6,17 +6,17 @@
             {
                 "march": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 },
                 "february": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 },
                 "january": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 }
             }
@@ -29,6 +29,29 @@
             {
                 "march": {
                     "value": 3941.32,
+                    "status": "fatura paga",
+                    "consumptionMonth": 100000                    
+                },
+                "february": {
+                    "value": 3941.32,
+                    "status": "fatura paga",
+                    "consumptionMonth": 100000                    
+                },
+                "january": {
+                    "value": 3941.32,
+                    "status": "fatura paga",
+                    "consumptionMonth": 100000                    
+                }
+            }
+        ]
+    },
+    {
+        "company": "MediaTech Solutions",
+        "situation": "3 faturas em atraso",
+        "consumptionHistory": [
+            {
+                "march": {
+                    "value": 3941.32,
                     "status": "aguardando pagamento",
                     "consumptionMonth": 100000                    
                 },
@@ -46,23 +69,23 @@
         ]
     },
     {
-        "company": "MediaTech Solutions",
+        "company": "TechFood Delivery",
         "situation": "última fatura paga",
         "consumptionHistory": [
             {
                 "march": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 },
                 "february": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 },
                 "january": {
                     "value": 3941.32,
-                    "status": "aguardando pagamento",
+                    "status": "fatura paga",
                     "consumptionMonth": 100000                    
                 }
             }
