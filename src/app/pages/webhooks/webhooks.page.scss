@@ -6,11 +6,12 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
     
         #main-page-wrapper {
             width: 100%;
             display: flex;
+            height: 100%;
     
             #menu-wrapper {
                 display: none;
@@ -32,6 +33,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -127,13 +129,13 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
         min-height: 100vh;
-        height: 100%;
     
         #main-page-wrapper {
             width: 100%;
             display: flex;
+            height: 100%;
     
             #menu-wrapper {
                 display: none;
@@ -155,6 +157,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -250,7 +253,7 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
         min-height: 100vh;
         height: 100%;
     
@@ -278,6 +281,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -352,13 +356,15 @@
 
 @media (min-width: 993px) and (max-width: 1200px) {
     main {
+        min-height: 100vh;
         width: 100%;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -381,6 +387,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -453,13 +460,15 @@
 
 @media(min-width: 1201px) and (max-width: 1400px) {
     main {
+        min-height: 100vh;
         width: 100%;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -482,6 +491,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -554,13 +564,15 @@
 
 @media (min-width: 1401px) and (max-width: 1920px) {
     main {
+        min-height: 100vh;
         width: 100%;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -583,6 +595,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
@@ -655,13 +668,15 @@
 
 @media (min-width: 1921px) {
     main {
+        min-height: 100vh;
         width: 100%;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -684,6 +699,7 @@
                 #active-webhooks-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 2rem;
                     padding: 1rem;
