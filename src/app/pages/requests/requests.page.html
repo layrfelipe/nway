@@ -36,67 +36,35 @@
 
                         @for(request of requests; track request.id) {
                             <tr class="table-custom-row">
-                                <td>{{request?.company}}</td>
+                                <td>{{request.company}}</td>
                                 <td>{{request?.date}}</td>
                                 <td>{{request?.type}}</td>
                                 @if(!isPhone()) {
-                                    <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">{{request?.status}}</ion-button></td>
+                                    @if(request.status == 'success') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">{{request.statusText}}</ion-button></td>
+                                    }
+                                    @if(request.status == 'waiting') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">{{request.statusText}}</ion-button></td>
+                                    }
+                                    @if(request.status == 'failure') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">{{request.statusText}}</ion-button></td>
+                                    }
                                 } @else {
-                                    <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                                    @if(request.status == 'success') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
+                                    }
+                                    @if(request.status == 'waiting') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
+                                    }
+                                    @if(request.status == 'failure') {
+                                        <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
+                                    }
                                 }
                                 <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
                             </tr>
                         }
 
                         <!-- <tr class="table-custom-row">
-                            <td>SunWave Energy Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Suspensão</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Aguardando resposta</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>DigitalHealth Tech</td>
-                            <td>20/05/2024</td>
-                            <td>Troca de fornecedor</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small">Em andamento</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="warning" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>MediaTech Solutions</td>
-                            <td>20/05/2024</td>
-                            <td>Suspensão</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small">Negada</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="danger" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
-                            <td>TechFood Delivery</td>
-                            <td>20/05/2024</td>
-                            <td>Migração</td>
-                            @if(!isPhone()) {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small">Concluída</ion-button></td>
-                            } @else {
-                                <td><ion-button class="custom-status-btn" (click)="goToRequestStatusPage()" color="success" size="small"></ion-button></td>
-                            }
-                            <td><ion-icon (click)="goToRequestStatusPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small' : 'large'"></ion-icon></td>
-                        </tr>
-
-                        <tr class="table-custom-row">
                             <td>CleanTech Innovations</td>
                             <td>20/05/2024</td>
                             <td>Troca de fornecedor</td>
@@ -173,7 +141,7 @@
                 </table>
 
                 <div id="table-footer">
-                    <span id="count-span">Mostrando 10 de 690</span>
+                    <span id="count-span">Mostrando {{requests?.length}} de 690</span>
                     <ion-button fill="clear" color="primary" size="small">Ver mais</ion-button>
                 </div>
             </div>
