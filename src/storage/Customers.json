@@ -1,7 +1,8 @@
 [
     {
         "company": "SunWave Energy Solutions",
-        "registerDate": "20/05/2024",
+        "companyId": 1,
+        "registerDate": "20/03/2024",
         "plan": "Basic",
         "status": "active",
         "cancelDate": "",
@@ -14,6 +15,25 @@
         "consumerUnitCode": 112,
         "consumerUnidStatus": "active",
         "id": "f01fd91f-6f0b-4a2f-ac5c-2d356059aeab",
+        "documentType": "CPF",
+        "retailerCode": "200012"
+    },
+    {
+        "company": "DigitalHealth Tech",
+        "companyId": 1,
+        "registerDate": "02/04/2024",
+        "plan": "Basic",
+        "status": "active",
+        "cancelDate": "",
+        "profileCode": 110,
+        "updatedAt": "2024-03-28T00:24:56-03:00",
+        "contractValidityStartDate": "2024-03-28T00:24:56-03:00",
+        "documentNumber": "0910197783",
+        "connectedType": "DISTRIBUIDORA_SUPRIDORA",
+        "connectedCode": 117,
+        "consumerUnitCode": 112,
+        "consumerUnidStatus": "active",
+        "id": "jd01jd13-k0l1-819j-ac5c-2d35anu9aeab",
         "documentType": "CPF",
         "retailerCode": "200012"
     }
