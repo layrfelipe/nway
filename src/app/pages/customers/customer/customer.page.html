@@ -9,7 +9,7 @@
         <div id="main-content-wrapper">
             <div id="customer-wrapper">
                 <ion-text color="dark">
-                    <h5>SunWave Energy Solutions</h5>
+                    <h5>{{customerData?.company}}</h5>
                 </ion-text>
 
                 <ion-text color="medium">
@@ -24,9 +24,16 @@
                                     <h5>Status</h5>
                                 </ion-text>
 
-                                <ion-text color="success">
-                                    <h3 id="customer-status">ATIVO</h3>
-                                </ion-text>
+                                @if(customerData?.status == 'active') {
+                                    <ion-text color="success">
+                                        <h3 id="customer-status">ATIVO</h3>
+                                    </ion-text>
+                                }
+                                @else {
+                                    <ion-text color="medium">
+                                        <h3 id="customer-status">INATIVO</h3>
+                                    </ion-text>
+                                }
                             </ion-col>
                             
                             <ion-col>

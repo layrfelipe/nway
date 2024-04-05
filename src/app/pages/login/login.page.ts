@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { InputCustomEvent } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth.service';
@@ -9,15 +9,19 @@ import { environment } from 'src/environments/environment';
   templateUrl: 'login.page.html',
   styleUrls: ['login.page.scss'],
 })
-export class LoginPage {
+export class LoginPage implements OnInit{
 
   protected userInput = signal<string | number | null | undefined>(null)
   protected passwordInput = signal<string | number | null | undefined>(null)
 
   constructor(
-    private router: Router,
-    private authService: AuthService
+    private router: Router
   ) {}
+
+  ngOnInit() {
+    this.userInput.set("cliente@nway.app")
+    this.passwordInput.set("1234")
+  }
 
   onChangeUserInput(ev: InputCustomEvent) {
     this.userInput.set(ev.target.value)

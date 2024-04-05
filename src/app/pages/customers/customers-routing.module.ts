@@ -11,7 +11,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cliente',
+    path: 'cliente/:clientId',
     component: CustomerPage
   },
   {

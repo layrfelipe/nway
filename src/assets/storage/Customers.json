@@ -96,7 +96,7 @@
     },
     {
         "company": "BioTech Innovations",
-        "companyId": 5,
+        "companyId": 6,
         "registerDate": "02/04/2024",
         "plan": "Basic",
         "status": "inactive",
@@ -115,7 +115,7 @@
     },
     {
         "company": "RoboTech Systems",
-        "companyId": 6,
+        "companyId": 7,
         "registerDate": "02/04/2024",
         "plan": "Basic",
         "status": "inactive",

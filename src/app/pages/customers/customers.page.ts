@@ -35,8 +35,8 @@ export class CustomersPage implements OnInit {
     })
   }
 
-  goToCustomerDetailsPage() {
-    this.router.navigate(['clientes', 'cliente'])
+  goToCustomerDetailsPage(id: any) {
+    this.router.navigate(['clientes', 'cliente', id])
   }
 
   goToCustomerRegisterPage() {

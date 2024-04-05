@@ -43,7 +43,7 @@
                                     } @else {
                                         <td><ion-button class="custom-status-btn" color="success" size="small"></ion-button></td>
                                     }
-                                    <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
+                                    <td><ion-icon (click)="goToCustomerDetailsPage(customer.companyId)" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                                 </tr>
                             }
                         }
@@ -84,7 +84,7 @@
                                     } @else {
                                         <td><ion-button class="custom-status-btn" color="medium" size="small"></ion-button></td>
                                     }
-                                    <td><ion-icon (click)="goToCustomerDetailsPage()" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
+                                    <td><ion-icon (click)="goToCustomerDetailsPage(customer.companyId)" color="medium" name="chevron-forward-outline" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                                 </tr>
                             }
                         }
