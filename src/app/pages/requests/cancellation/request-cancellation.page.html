@@ -7,7 +7,9 @@
         </div>
 
         <div id="main-content-wrapper">
-            <h2>Selecione o cliente a ser suspenso</h2>
+            <ion-text color="dark">
+                <h2>Selecione o cliente a ser suspenso</h2>
+            </ion-text>
 
             <div id="search-wrapper">
                 <ion-input placeholder="Pesquise pelo nome ou CNPJ do cliente" fill="outline" color="dark">
@@ -66,7 +68,7 @@
             </ion-text>
             
             <div id="reason-text-wrapper">
-                <ion-textarea [autoGrow]="true" placeholder="Digite o motivo da solicitação" fill="outline"></ion-textarea>
+                <ion-textarea [autoGrow]="true" placeholder="Digite o motivo da solicitação" fill="outline" color="dark"></ion-textarea>
             </div>
 
             <ion-button color="success">SOLICITAR SUSPENSÃO</ion-button>
