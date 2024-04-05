@@ -15,47 +15,88 @@
                     <p>CNPJ: 01.010.001/0001-11</p>
                 </ion-text>
                 
-                <ion-button color="warning" class="ion-text-wrap">Solicitação em andamento</ion-button>
+                @if(requestData?.status == 'success') {
+                    <ion-button color="success" class="ion-text-wrap">{{requestData?.statusText}}</ion-button>                    
+                }
 
+                @if(requestData?.status == 'waiting') {
+                    <ion-button color="warning" class="ion-text-wrap">{{requestData?.statusText}}</ion-button>
+                }
+                
                 <ion-list>
-                    <ion-item lines="none" class="custom-item">
-                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
-                        <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
-                        <ion-text color="medium" class="request-status-description"><p>Fechar negócio e assinar o Contrato de Compra e Venda (CCV).</p></ion-text>
-                    </ion-item>
+                    @for(statusUpdate of requestData?.stages; track statusUpdate.id) {
+                        <ion-item lines="none" class="custom-item">
+                            @if(statusUpdate.status == 'success') {
+                                <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                            }
+                            @if (statusUpdate.status == 'waiting') {
+                                <ion-icon name="time" color="warning"></ion-icon>
+                            }
+                            <ion-text color="medium" class="request-status-datetime"><p>{{statusUpdate.datetime}}</p></ion-text>
+                            <ion-text color="medium" class="request-status-description"><p>{{statusUpdate.message}}</p></ion-text>
+                        </ion-item>
+                    }
 
-                    <ion-item lines="none" class="custom-item">
-                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+
+
+
+                    <!-- <ion-item lines="none" class="custom-item">
+                        @if(requestData?.status == 'success') {
+                            <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        }
+                        @if (requestData?.status == 'waiting') {
+                            <ion-icon name="checkmark-circle" color="warning"></ion-icon>
+                        }
                         <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
                         <ion-text color="medium" class="request-status-description"><p>Emitir carta de denúncia para a Distribuidora atual.</p></ion-text>
                     </ion-item>
 
                     <ion-item lines="none" class="custom-item">
-                        <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        @if(requestData?.status == 'success') {
+                            <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        }
+                        @if (requestData?.status == 'waiting') {
+                            <ion-icon name="checkmark-circle" color="warning"></ion-icon>
+                        }
                         <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
                         <ion-text color="medium" class="request-status-description"><p>Informar a distribuidora sobre a intenção de migrar a Unidade Consumidora.</p></ion-text>
                     </ion-item>
 
                     <ion-item lines="none" class="custom-item">
-                        <ion-icon name="time" color="warning"></ion-icon>
+                        @if(requestData?.status == 'success') {
+                            <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        }
+                        @if (requestData?.status == 'waiting') {
+                            <ion-icon name="time-circle" color="warning"></ion-icon>
+                        }
                         <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
-                        <ion-text color="dark" class="request-status-description"><p>Solicitar confirmação de migração por parte da Distribuidora.</p></ion-text>
+                        <ion-text color="medium" class="request-status-description"><p>Solicitar confirmação de migração por parte da Distribuidora.</p></ion-text>
                     </ion-item>
 
                     <ion-item lines="none" class="custom-item">
-                        <ion-icon name="time" color="medium"></ion-icon>
+                        @if(requestData?.status == 'success') {
+                            <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        }
+                        @if (requestData?.status == 'waiting') {
+                            <ion-icon name="time-circle" color="warning"></ion-icon>
+                        }
                         <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
                         <ion-text color="medium" class="request-status-description"><p>Confirmar a migração, fornecendo os dados de consumo detalhados.</p></ion-text>
                     </ion-item>
 
                     <ion-item lines="none" class="custom-item">
-                        <ion-icon name="time" color="medium"></ion-icon>
+                        @if(requestData?.status == 'success') {
+                            <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                        }
+                        @if (requestData?.status == 'waiting') {
+                            <ion-icon name="time-circle" color="warning"></ion-icon>
+                        }
                         <ion-text color="medium" class="request-status-datetime"><p>16:30 22/03/24</p></ion-text>
                         <ion-text color="medium" class="request-status-description"><p>Oficializar a migração para o Ambiente de Contratação Livre (ACL).</p></ion-text>
-                    </ion-item>
+                    </ion-item> -->
                 </ion-list>
 
-                <div id="show-customer-data-btn" (click)="goToCustomerDetailPage()">
+                <div id="show-customer-data-btn" (click)="goToCustomerDetailPage(requestData?.companyId)">
                     <ion-text color="success"><h6>EXIBIR DADOS DO CLIENTE</h6></ion-text>
                     <ion-icon id="arrow-icon" name="arrow-forward-outline" color="success"></ion-icon>
                 </div>

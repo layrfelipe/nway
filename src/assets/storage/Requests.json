@@ -9,33 +9,39 @@
         "statusText": "Suspensão aprovada",
         "stages": [
             {
+                "id": 1,
                 "datetime": "21:00 03/04/24",
                 "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL)",
                 "status": "success"
             },
             {
+                "id": 2,
                 "datetime": "07:30 04/04/24",
                 "message": "Confirmar a migração, fornecendo os dados de consumo detalhados",
                 "status": "success"
             },
             {
+                "id": 3,
                 "datetime": "08:45 04/04/24",
                 "message": "Solicitar confirmação de migração por parte da Distribuidora",
                 "status": "success"
             },
             {
+                "id": 4,
                 "datetime": "11:00 04/04/24",
                 "message": "Informar a distribuidora sobre a intenção de migrar a Unidade Consumidora",
                 "status": "success"
             },
             {
+                "id": 5,
                 "datetime": "12:30 04/04/24",
                 "message": "Emitir carta de denúncia para a Distribuidora atual",
                 "status": "success"
             },
             {
+                "id": 6,
                 "datetime": "16:30 04/04/24",
-                "message": "Fechar o negócio e assinar o Contrato de Compra e Venda",
+                "message": "Oficializar a suspensão do fornecimento de serviço.",
                 "status": "success"
             }
         ]
@@ -50,34 +56,40 @@
         "statusText": "Aguardando resposta",
         "stages": [
             {
+                "id": 1,
                 "datetime": "21:00 03/04/24",
                 "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL)",
                 "status": "success"
             },
             {
+                "id": 2,
                 "datetime": "07:30 04/04/24",
                 "message": "Confirmar a migração, fornecendo os dados de consumo detalhados",
                 "status": "success"
             },
             {
+                "id": 3,
                 "datetime": "08:45 04/04/24",
                 "message": "Solicitar confirmação de migração por parte da Distribuidora",
                 "status": "success"
             },
             {
+                "id": 4,
                 "datetime": "11:00 04/04/24",
                 "message": "Informar a distribuidora sobre a intenção de migrar a Unidade Consumidora",
                 "status": "success"
             },
             {
+                "id": 5,
                 "datetime": "12:30 04/04/24",
                 "message": "Emitir carta de denúncia para a Distribuidora atual",
                 "status": "success"
             },
             {
+                "id": 6,
                 "datetime": "16:30 04/04/24",
-                "message": "Fechar o negócio e assinar o Contrato de Compra e Venda",
-                "status": "success"
+                "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL).",
+                "status": "waiting"
             }
         ]
     },
@@ -91,33 +103,39 @@
         "statusText": "Migração aprovada",
         "stages": [
             {
+                "id": 1,
                 "datetime": "21:00 03/04/24",
                 "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL)",
                 "status": "success"
             },
             {
+                "id": 2,
                 "datetime": "07:30 04/04/24",
                 "message": "Confirmar a migração, fornecendo os dados de consumo detalhados",
                 "status": "success"
             },
             {
+                "id": 3,
                 "datetime": "08:45 04/04/24",
                 "message": "Solicitar confirmação de migração por parte da Distribuidora",
                 "status": "success"
             },
             {
+                "id": 4,
                 "datetime": "11:00 04/04/24",
                 "message": "Informar a distribuidora sobre a intenção de migrar a Unidade Consumidora",
                 "status": "success"
             },
             {
+                "id": 5,
                 "datetime": "12:30 04/04/24",
                 "message": "Emitir carta de denúncia para a Distribuidora atual",
                 "status": "success"
             },
             {
+                "id": 6,
                 "datetime": "16:30 04/04/24",
-                "message": "Fechar o negócio e assinar o Contrato de Compra e Venda",
+                "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL).",
                 "status": "success"
             }
         ]
@@ -158,14 +176,14 @@
             },
             {
                 "datetime": "16:30 04/04/24",
-                "message": "Fechar o negócio e assinar o Contrato de Compra e Venda",
+                "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL).",
                 "status": "success"
             }
         ]
     },
     {
         "id": 5,
-        "company": "TechFood Delivery",
+        "company": "FinTech Express",
         "companyId": 5,
         "date": "11/03/2024",
         "type": "Migração",
@@ -199,8 +217,8 @@
             },
             {
                 "datetime": "16:30 04/04/24",
-                "message": "Fechar o negócio e assinar o Contrato de Compra e Venda",
-                "status": "success"
+                "message": "Oficializar a migração para o Ambiente de Contratação Livre (ACL).",
+                "status": "waiting"
             }
         ]
     }

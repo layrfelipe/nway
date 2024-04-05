@@ -29,7 +29,7 @@ export class RequestStatusPage implements OnInit {
     })
   }
   
-  goToCustomerDetailPage() {
-    this.router.navigate(['clientes/cliente'])
+  goToCustomerDetailPage(companyId: any) {
+    this.router.navigate(['clientes', 'cliente', companyId])
   }
 }
