@@ -10,7 +10,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'cliente',
+    path: 'cliente/:id',
     component: MeasurementQueryCustomerPage
   }
 ];

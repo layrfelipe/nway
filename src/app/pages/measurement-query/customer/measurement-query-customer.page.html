@@ -11,7 +11,7 @@
                 <div id="content-header">
                     <div id="company-name-and-cnpj-wrapper">
                         <ion-text color="dark">
-                            <h5>SunWave Energy Solutions</h5>
+                            <h5>{{customerData?.company}}</h5>
                         </ion-text>
     
                         <ion-text color="medium">
@@ -46,11 +46,21 @@
                             <td>Março</td>
                             <td>R$3.941,32</td>
                             @if(!isPhone()) {
-                                <td>
-                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                                </td>
+                                @if(customerData?.consumptionHistory[0].march.status == 'fatura paga'){
+                                    <td>
+                                        <ion-text color="success"><span>{{customerData?.consumptionHistory[0].march.status}}</span></ion-text>
+                                    </td>
+                                } @else {
+                                    <td>
+                                        <ion-text color="danger"><span>{{customerData?.consumptionHistory[0].march.status}}</span></ion-text>
+                                    </td>
+                                }
                             } @else {
-                                <ion-button color="danger" size="small"></ion-button>
+                                @if(customerData?.consumptionHistory[0].march.status == 'fatura paga'){
+                                    <ion-button color="success" size="small"></ion-button>
+                                } @else {
+                                    <ion-button color="danger" size="small"></ion-button>
+                                }
                             }
                             <td>100.000 kWh</td>
                             @if(!isPhone()) {
@@ -62,15 +72,26 @@
                         </tr>
 
                         <tr class="table-custom-row">
-                            <td>Março</td>
+                            <td>Fevereiro</td>
                             <td>R$3.941,32</td>
                             @if(!isPhone()) {
-                                <td>
-                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                                </td>
+                                @if(customerData?.consumptionHistory[0].february.status == 'fatura paga'){
+                                    <td>
+                                        <ion-text color="success"><span>{{customerData?.consumptionHistory[0].february.status}}</span></ion-text>
+                                    </td>
+                                } @else {
+                                    <td>
+                                        <ion-text color="danger"><span>{{customerData?.consumptionHistory[0].february.status}}</span></ion-text>
+                                    </td>
+                                }
                             } @else {
-                                <ion-button color="danger" size="small"></ion-button>
+                                @if(customerData?.consumptionHistory[0].february.status == 'fatura paga'){
+                                    <ion-button color="success" size="small"></ion-button>
+                                } @else {
+                                    <ion-button color="danger" size="small"></ion-button>
+                                }
                             }
+
                             <td>100.000 kWh</td>
                             @if(!isPhone()) {
                                 <td>Relatório de consumo</td>
@@ -79,14 +100,24 @@
                         </tr>
 
                         <tr class="table-custom-row">
-                            <td>Março</td>
+                            <td>Janeiro</td>
                             <td>R$3.941,32</td>
                             @if(!isPhone()) {
-                                <td>
-                                    <ion-text color="danger"><span>aguardando pagamento</span></ion-text>
-                                </td>
+                                @if(customerData?.consumptionHistory[0].january.status == 'fatura paga'){
+                                    <td>
+                                        <ion-text color="success"><span>{{customerData?.consumptionHistory[0].january.status}}</span></ion-text>
+                                    </td>
+                                } @else {
+                                    <td>
+                                        <ion-text color="danger"><span>{{customerData?.consumptionHistory[0].january.status}}</span></ion-text>
+                                    </td>
+                                }
                             } @else {
-                                <ion-button color="danger" size="small"></ion-button>
+                                @if(customerData?.consumptionHistory[0].january.status == 'fatura paga'){
+                                    <ion-button color="success" size="small"></ion-button>
+                                } @else {
+                                    <ion-button color="danger" size="small"></ion-button>
+                                }
                             }
                             <td>100.000 kWh</td>
                             @if(!isPhone()) {

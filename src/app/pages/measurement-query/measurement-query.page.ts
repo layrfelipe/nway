@@ -35,7 +35,7 @@ export class MeasurementQueryPage  implements OnInit {
     })
   }
 
-  goToMeasurementQueryCustomerPage() {
-    this.router.navigate(['consulta-de-medicao', 'cliente'])    
+  goToMeasurementQueryCustomerPage(companyId: any) {
+    this.router.navigate(['consulta-de-medicao', 'cliente', companyId])    
   }
 }

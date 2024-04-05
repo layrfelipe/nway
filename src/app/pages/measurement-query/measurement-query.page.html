@@ -48,9 +48,9 @@
                                 }
                                 <td>{{measure.consumptionHistory[0].march.consumptionMonth}} kWh</td>
                                 @if(!isPhone()) {
-                                    <td (click)="goToMeasurementQueryCustomerPage()" class="consumption-report-column">Relatório de consumo</td>
+                                    <td (click)="goToMeasurementQueryCustomerPage(measure.companyId)" class="consumption-report-column">Relatório de consumo</td>
                                 }
-                                <td><ion-icon (click)="goToMeasurementQueryCustomerPage()" name="chevron-forward-outline" color="medium" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
+                                <td><ion-icon (click)="goToMeasurementQueryCustomerPage(measure.companyId)" name="chevron-forward-outline" color="medium" [size]="isMobile() ? 'small': 'large'"></ion-icon></td>
                             </tr>
                         }
                     </tbody>
