@@ -1,6 +1,7 @@
 [
     {
         "company": "SunWave Energy Solutions",
+        "companyId": 1,
         "situation": "última fatura paga",
         "consumptionHistory": [
             {
@@ -24,6 +25,7 @@
     },
     {
         "company": "DigitalHealth Tech",
+        "companyId": 2,
         "situation": "última fatura paga",
         "consumptionHistory": [
             {
@@ -47,6 +49,7 @@
     },
     {
         "company": "MediaTech Solutions",
+        "companyId": 3,
         "situation": "3 faturas em atraso",
         "consumptionHistory": [
             {
@@ -70,6 +73,7 @@
     },
     {
         "company": "TechFood Delivery",
+        "companyId": 4,
         "situation": "última fatura paga",
         "consumptionHistory": [
             {

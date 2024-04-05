@@ -17,7 +17,7 @@ export class LogsPage implements OnInit {
   ngOnInit() {
     this.storage.getLogsMockData().subscribe((logs) => {
       if (logs) {
-        this.logs = logs;
+        this.logs = logs.slice(0, 5);
       }
     })
   }

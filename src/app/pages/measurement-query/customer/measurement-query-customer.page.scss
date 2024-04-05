@@ -4,9 +4,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -24,6 +26,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -119,7 +122,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     padding: .5rem;
                     border-radius: 1rem;
 
@@ -145,9 +148,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -165,6 +170,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -260,7 +266,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     padding: .5rem;
                     border-radius: 1rem;
 
@@ -286,9 +292,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -306,6 +314,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -401,7 +410,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     padding: .5rem;
                     border-radius: 1rem;
 
@@ -427,9 +436,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -446,6 +457,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -540,7 +552,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -569,9 +581,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -588,6 +602,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -682,7 +697,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -711,9 +726,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -730,6 +747,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -824,7 +842,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -853,9 +871,11 @@
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: #ebebeb;
+        min-height: 100vh;
     
         #main-page-wrapper {
+            height: 100%;
             width: 100%;
             display: flex;
     
@@ -872,6 +892,7 @@
                 #measurement-queries-table-wrapper {
                     width: 100%;
                     border: 1px solid #b7b7b7;
+                    background: white;
                     border-radius: 1rem;
                     margin-top: 1rem;
                     padding: 1rem;
@@ -966,7 +987,7 @@
                 #payment-warning-wrapper {
                     margin-top: 2rem;
                     width: 100%;
-                    background: #F0F0F0;
+                    background: #d2d2d2;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
